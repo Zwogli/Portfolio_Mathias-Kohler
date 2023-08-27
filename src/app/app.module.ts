@@ -9,7 +9,9 @@ import { SectionAboutMeComponent } from './section-about-me/section-about-me.com
 import { SectionSkillsComponent } from './section-skills/section-skills.component';
 import { SectionContactComponent } from './section-contact/section-contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SectionPortfolioComponent } from './section-portfolio/section-portfolio.component';
+import { ProjectElPolloLocoComponent } from './project-el-pollo-loco/project-el-pollo-loco.component';
+import { ProjectJoinComponent } from './project-join/project-join.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SectionSkillsComponent,
     SectionContactComponent,
     FooterComponent,
-    PortfolioComponent,
+    SectionPortfolioComponent,
+    ProjectElPolloLocoComponent,
+    ProjectJoinComponent,
   ],
   imports: [
     BrowserModule,
