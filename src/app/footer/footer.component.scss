@@ -1,0 +1,18 @@
+div{
+  padding: 16px 0;
+  border-top: 4px solid #70E61C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  h1{
+    margin: 0px;
+  }
+  div{
+    border-top: none;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
