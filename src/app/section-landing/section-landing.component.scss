@@ -1,0 +1,28 @@
+.landing{
+  height: calc(100dvh - 100px);
+}
+
+.container-photo{
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+
+  img{
+    width: 100%;
+    position: absolute;
+    
+  }
+  .background-color{
+    height: 100%;
+    object-fit: cover;
+  }
+  .vector{
+    bottom: -65px;
+  }
+}
+
+.socialmedia{
+  border-top: none;
+  flex-direction: row;
+  gap: 16px;
+}
