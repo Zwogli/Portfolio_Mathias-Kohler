@@ -1,0 +1,25 @@
+div{
+  background-color: #141D2F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div{
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+#hamburgermenu{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .bar{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 1px;
+  }
+}
