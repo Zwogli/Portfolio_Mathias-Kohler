@@ -2,12 +2,13 @@
   height: calc(100dvh - 100px);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .container-photo{
   position: relative;
   width: 100dvw;
-  height: 50dvh;
+  height: 40dvh;
   display: flex;
   justify-content: center;
 
@@ -23,7 +24,7 @@
   }
   .vector{
     width: 100dvw;
-    bottom: -100px;
+    bottom: -110px;
   }
 }
 
@@ -32,39 +33,59 @@
 }
 
 .info{
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
   .welcome{
-    display: block;
-    flex-direction: row;
-    h2, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
       margin: 0;
     }
 
     .vertical{
-      // writing-mode: vertical-rl;
-      position: absolute;
-      z-index: 1;
       transform: rotate(-90deg);
+    }
+    .horizontal{
+      display: flex;
+      flex-direction: column;
+      .info-name{
+        font-weight: bold;
+      }
+      .info-description{
+        color: #9747ff;
+      }
+    }
+  }
+  .container-hover{
+    height: 60px;
+    .btn-green{
+      max-width: fit-content;
     }
   }
 }
 
 .section-end{
+  width: 100dvw;
   display: flex;
   align-items: center;
   justify-content: center;
   .social-bar{
     position: absolute;
-    width: 25dvw;
+    width: 20dvw;
     border-top: 2px solid #9747FF;
-    top: 14.5;
     left: 0;
   }
   .social{
+    width: 100%;
     border-top: none;
     display: flex;
     justify-content: center;
     gap: 16px;
   }
 }
-
-  

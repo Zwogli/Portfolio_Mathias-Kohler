@@ -25,4 +25,10 @@ a{
   border-radius: 10px;
   color: white;
   background-color: #70E61C;
+
+  &:hover{
+    background-color: #9747FF;
+    font-size: 16px;
+    scale: 1.1;
+  }
 }
