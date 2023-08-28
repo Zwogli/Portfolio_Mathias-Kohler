@@ -1,9 +1,11 @@
 .landing{
-  margin-top: 75px;
-  height: calc(100dvh - 75px);
+  padding-top: 75px;
+  padding-bottom: 16px;
+  height: calc(100dvh - 75px - 16px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 32px;
 }
 
 .container-photo{
@@ -34,7 +36,6 @@
 }
 
 .info{
-  margin-top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
