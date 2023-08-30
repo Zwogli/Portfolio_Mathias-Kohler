@@ -6,6 +6,10 @@ section{
   display: flex;
   flex-direction: column;
   gap: 32px;
+  background-image: url(/assets/backgrounds/Purple-shadow-1.png);
+  background-size: 300px 500px;
+  background-position: top -19px right -132px;
+  background-repeat: no-repeat;
 }
 
 .bulb, .puzzle{
