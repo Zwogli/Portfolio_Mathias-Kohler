@@ -1,0 +1,20 @@
+.headline-portfolio{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+  .portfolio-bar-small{
+    width: 10dvw;
+    border-top: 2px solid #9747FF;
+    right: 0;
+  }
+  .portfolio-bar-big{
+    width: 35dvw;
+    border-top: 2px solid #9747FF;
+    right: 0;
+  }
+}
+p{
+  margin-top: unset;
+  text-align: center;
+}
