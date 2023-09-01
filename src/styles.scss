@@ -1,42 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-  --color-white:white;
-  --color-bg-darkBlue:#141D2F;
-  --color-bg-darkBlue-transparency:rgba(20, 29, 47, 0.8);
-  --color-bg-purple:#9747FF;
-  --color-bg-green:#70E61C;
+:root {
+  --color-white: white;
+  --color-bg-darkBlue: #141d2f;
+  --color-bg-darkBlue-transparency: rgba(20, 29, 47, 0.8);
+  --color-bg-purple: #9747ff;
+  --color-bg-green: #70e61c;
   --color-bg-inputs: #1b2740;
 }
-html, body { 
+html,
+body {
   margin: 0;
 }
 
-body{
+body {
   background-color: var(--color-bg-darkBlue);
   color: var(--color-white);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-a{
+a {
   color: var(--color-white);
   text-decoration: none;
   cursor: pointer;
 }
 
-.link{
+.link {
   cursor: pointer;
 }
 
-.btn-green{
+.btn-green {
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
   color: var(--color-white);
   background-color: var(--color-bg-green);
 
-  &:hover{
+  &:hover {
     background-color: var(--color-bg-purple);
     font-size: 16px;
     scale: 1.1;
   }
+}
+.s{
+  color: var(--color-bg-green);
 }

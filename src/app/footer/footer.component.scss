@@ -16,3 +16,27 @@ div{
     gap: 16px;
   }
 }
+.i {
+  color: var(--color-white);
+  position: relative;
+}
+.i-bar {
+  color: var(--color-bg-purple);
+  position: absolute;
+  border: 4px solid;
+  border-radius: 50%;
+  top: 7px;
+  left: 1px;
+}
+.t {
+  color: var(--color-white);
+  position: relative;
+}
+.t-bar{
+  width: 6px;
+  color: var(--color-bg-green);
+  position: absolute;
+  border: 3px solid;
+  top: 15px;
+  left: 0px;
+}
