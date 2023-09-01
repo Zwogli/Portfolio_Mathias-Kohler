@@ -1,16 +1,20 @@
 .headline-portfolio{
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  .portfolio-bar-small{
-    width: 10dvw;
-    border-top: 2px solid #9747FF;
-    right: 0;
+  position: relative;
+  h2{
+    z-index: 1;
+    background-color: #141D2F;
+    padding: 0 5px;
   }
-  .portfolio-bar-big{
-    width: 35dvw;
+  .portfolio-bar{
+    position: absolute;
+    width: 80dvw;
     border-top: 2px solid #9747FF;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     right: 0;
   }
 }
