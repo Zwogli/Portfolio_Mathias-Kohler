@@ -6,9 +6,11 @@
   --color-bg-purple: #9747ff;
   --color-bg-green: #70e61c;
   --color-bg-inputs: #1b2740;
+
+  --padding-mobile: 0 10%;
 }
 html,
-body {
+body, h2, p {
   margin: 0;
 }
 
