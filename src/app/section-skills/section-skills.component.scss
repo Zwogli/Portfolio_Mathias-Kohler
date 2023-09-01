@@ -14,9 +14,8 @@ p{
   flex-direction: row-reverse;
   gap: 8px;
   .skill-bar{
-    // position: absolute;
     width: 10dvw;
-    border-top: 2px solid #9747FF;
+    border-top: 2px solid var(--color-bg-purple);
     right: 0;
   }
   h2{

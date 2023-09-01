@@ -60,7 +60,7 @@
         font-weight: bold;
       }
       .info-description{
-        color: #9747ff;
+        color: var(--color-bg-purple);
       }
     }
   }
@@ -80,7 +80,7 @@
   .social-bar{
     position: absolute;
     width: 20dvw;
-    border-top: 2px solid #9747FF;
+    border-top: 2px solid var(--color-bg-purple);
     left: 0;
   }
   .social{

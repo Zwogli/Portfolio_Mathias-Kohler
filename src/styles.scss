@@ -1,16 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --color-white:white;
+  --color-bg-darkBlue:#141D2F;
+  --color-bg-darkBlue-transparency:rgba(20, 29, 47, 0.8);
+  --color-bg-purple:#9747FF;
+  --color-bg-green:#70E61C;
+}
 html, body { 
   margin: 0;
 }
 
 body{
-  background-color: #141D2F;
-  color: white;
+  background-color: var(--color-bg-darkBlue);
+  color: var(--color-white);
   font-family: 'Poppins', sans-serif;
 }
 
 a{
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   cursor: pointer;
 }
@@ -23,11 +30,11 @@ a{
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
-  color: white;
-  background-color: #70E61C;
+  color: var(--color-white);
+  background-color: var(--color-bg-green);
 
   &:hover{
-    background-color: #9747FF;
+    background-color: var(--color-bg-purple);
     font-size: 16px;
     scale: 1.1;
   }

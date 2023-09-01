@@ -8,13 +8,13 @@ section{
 }
 
 div{
-  background-color: #141D2F;
+  background-color: var(--color-bg-darkBlue);
   display: flex;
   justify-content: space-between;
   align-items: center;
   div{
     a{
-      color: white;
+      color: var(--color-white);
       text-decoration: none;
     }
   }
@@ -28,7 +28,7 @@ div{
   flex-direction: column;
   .bar{
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 1px;
   }
 }
