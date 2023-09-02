@@ -1,9 +1,9 @@
 section{
-  margin-top: var(--margin-section);
+  margin-top: var(--margin-section-mobile);
   padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--gap-mobile);
   // background-image: url(/assets/backgrounds/Purple-shadow-1.png);
   // background-size: 300px 500px;
   // background-position: top -19px right -132px;
@@ -12,12 +12,12 @@ section{
   .container-aboutMe{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: var(--gap-mobile);
   }
   
   .bulb, .puzzle{
     display: flex;
-    gap: 24px;
+    gap: var(--gap-mobile);
   
     img{
       width: 50px;

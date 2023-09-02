@@ -1,5 +1,5 @@
 <section>
-  <div>
+  <div class="section-intro">
     <div class="headline-skills">
       <span class="skill-bar"></span>
       <h2>My skills</h2>
@@ -11,94 +11,13 @@
   </div>
 
   <div class="container-skills">
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Angular.png" alt="" />
-      </div>
-
-      <span>Angular</span>
+    
+    <div *ngFor="let skill of skills"  class="skills">
+      <div><img src="{{ skill.img }}" alt=""></div>
+      <span>{{ skill.name }}</span>
     </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Api.png" alt="" />
-      </div>
-
-      <span>RestAPI</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/css.png" alt="" />
-      </div>
-
-      <span>CSS</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Firebase.png" alt="" />
-      </div>
-
-      <span>Firebase</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Git.png" alt="" />
-      </div>
-
-      <span>Git</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/html.png" alt="" />
-      </div>
-
-      <span>HTML</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/JavScript.png" alt="" />
-      </div>
-
-      <span>JavaScript</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/materialDesign.png" alt="" />
-      </div>
-
-      <span>Material Design</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Scrum.png" alt="" />
-      </div>
-
-      <span>Scrum</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/Typescript.png" alt="" />
-      </div>
-
-      <span>Typescript</span>
-    </div>
-
-    <div class="skills">
-      <div class="icons_mobile">
-        <img src="assets/icons_mobile/WordPress.png" alt="" />
-      </div>
-
-      <span>Word Press</span>
-    </div>
-  </div>
+    
+  </div> 
 
   <div class="btn-skill">
     <div class="container-hover">
