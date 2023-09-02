@@ -5,7 +5,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 32px;
+  gap: 16px;
 }
 
 .container-photo{
@@ -18,16 +18,19 @@ section{
   img{
     height: 100%;
     position: absolute;
-    
   }
   .background-color{
     width: 100dvw;
     height: 100%;
     object-position: center;
   }
+  .img-photo{
+    object-fit: cover;
+    height: 108%;
+  }
   .vector{
     width: 100dvw;
-    bottom: -110px;
+    bottom: -130px;
   }
 }
 
@@ -36,11 +39,12 @@ section{
 }
 
 .info{
+  padding: var(--padding-mobile);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   .welcome{
     display: flex;
     justify-content: center;
@@ -51,6 +55,7 @@ section{
     }
 
     .vertical{
+      font-size: 20px;
       transform: rotate(-90deg);
     }
     .horizontal{
@@ -58,13 +63,17 @@ section{
       flex-direction: column;
       .info-name{
         font-weight: bold;
+        font-size: 24px;
       }
       .info-description{
+        font-size: 20px;
         color: var(--color-bg-purple);
       }
     }
   }
   .container-hover{
+    display: flex;
+    align-items: center;
     height: 60px;
     .btn-green{
       max-width: fit-content;
