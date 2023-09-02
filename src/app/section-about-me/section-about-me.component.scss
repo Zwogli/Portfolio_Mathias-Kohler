@@ -1,20 +1,28 @@
 section{
+  margin-top: var(--margin-section);
   padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   // background-image: url(/assets/backgrounds/Purple-shadow-1.png);
   // background-size: 300px 500px;
   // background-position: top -19px right -132px;
   // background-repeat: no-repeat;
-}
-
-.bulb, .puzzle{
-  display: flex;
-  gap: 32px;
-
-  img{
-    width: 50px;
-    height: 50px;
+  
+  .container-aboutMe{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .bulb, .puzzle{
+    display: flex;
+    gap: 24px;
+  
+    img{
+      width: 50px;
+      height: 50px;
+    }
   }
 }
+
