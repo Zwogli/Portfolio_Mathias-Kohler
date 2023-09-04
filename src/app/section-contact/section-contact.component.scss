@@ -1,35 +1,49 @@
+section{
+  margin-top: var(--margin-section-mobile);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-mobile);
+}
+
 .headline-contact{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
   .contact-bar{
-    width: 10dvw;
+    width: calc(10% - 8px);
     border-top: 2px solid var(--color-bg-purple);
-    right: left;
+    left: 0px;
   }
   h2{
     text-align: start;
   }
 }
-.contact-me{
-  font-weight: bold;
+.info{
+  padding: var(--padding-mobile);
+
+  h3{
+    margin: var(--gap-mobile) 0;
+  }
+  .contact-me{
+    font-weight: bold;
+  }
 }
 
 form{
   margin: unset;
-  max-width: calc(100dvw);
+  padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: var(--gap-mobile);
 
   input::placeholder,textarea::placeholder{
     color: var(--color-white);
     font-family: poppins;
   }
   input, textarea{
-    width: calc(80% - 20px);
+    width: calc(100% - 40px - 2px);
     border: 1px solid var(--color-bg-purple);
     border-radius: 10px;
     background-color: var(--color-bg-inputs);
@@ -50,8 +64,9 @@ form{
 }
 
 .goUp{
-  width: 100dvw;
-  padding: 25px 0;
+  width: calc(100dvw - 20%);
+  margin-top: -24px;
+  padding: 25px 10%;
   display: flex;
   justify-content: flex-end;
 }
