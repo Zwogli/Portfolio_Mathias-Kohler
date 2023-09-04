@@ -19,10 +19,14 @@ section{
     border-top: 2px solid var(--color-bg-purple);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    right: 0;
+    right: -10%;
   }
 }
 p{
+  padding: var(--padding-mobile);
   margin-top: unset;
   text-align: center;
+}
+article{
+  padding: var(--padding-mobile);
 }
