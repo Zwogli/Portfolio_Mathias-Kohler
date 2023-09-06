@@ -24,9 +24,13 @@ section{
 
   h3{
     margin: var(--gap-mobile) 0;
+    font-size: 20px;
   }
-  .contact-me{
-    font-weight: bold;
+  p:last-of-type{
+    margin: 8px 0;
+    .contact-me{
+      font-weight: bold;
+    }
   }
 }
 
@@ -47,6 +51,7 @@ form{
     border: 1px solid var(--color-bg-purple);
     border-radius: 10px;
     background-color: var(--color-bg-inputs);
+    font-size: 16px;
   }
   input{
     padding: 0 20px;
