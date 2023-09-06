@@ -27,22 +27,30 @@ main{
   display: flex;
   justify-content: center;
 
-  img{
-    height: 100%;
-    position: absolute;
-  }
-  .background-color{
-    width: 100dvw;
-    height: 100%;
-    object-position: center;
-  }
-  .img-photo{
-    object-fit: cover;
-    height: 108%;
-  }
+  .container-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    img{
+      height: 100%;
+      position: absolute;
+    }  
+    .background-color{
+      width: 100dvw;
+      height: 100%;
+      object-position: center;
+    }
+    .img-photo{
+      object-fit: cover;
+      height: 108%;
+    }
+  } 
   .vector{
+    position: absolute;
     width: 100dvw;
-    bottom: -130px;
+    top: 50%;
+    object-fit: fill;
   }
 }
 
@@ -51,7 +59,9 @@ footer, article{
 }
 
 article{
+  margin-top: 5%;
   padding: var(--padding-mobile);
+  height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
