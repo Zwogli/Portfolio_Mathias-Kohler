@@ -32,48 +32,45 @@ a {
 .link {
   cursor: pointer;
 }
-.btn-container{
+.container-btn-hover{
   height: 70px;
   display: flex;
   align-items: center;
-}
-.btn{
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  &:hover{
-    cursor: pointer;
-    padding: 20px 40px;
+  .btn{
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    &:hover{
+      cursor: pointer;
+      padding: 20px 40px;
+    }
   }
-}
-
-.btn-green {
-  border: none;
-  color: var(--color-white);
-  background-color: var(--color-bg-green);
-  &:hover {
+  .btn-green {
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-bg-green);
+    &:hover {
+      background-color: var(--color-bg-purple);
+    }
+  }
+  .btn-purple{
+    padding: 15px 20px;
+    color: var(--color-white);
     background-color: var(--color-bg-purple);
+    border: unset;
+    &:hover{
+      padding: 20px 35px;
+    }
   }
-}
-
-.btn-purple{
-  padding: 15px 20px;
-  color: var(--color-white);
-  background-color: var(--color-bg-purple);
-  border: unset;
-  &:hover{
-    padding: 20px 35px;
-  }
-}
-
-.btn-border{
-  padding: 15px 20px;
-  color: var(--color-white);
-  border: 1px solid var(--color-bg-green);
-  background-color: unset;
-  &:hover{
-    padding: 20px 35px;
+  .btn-border{
+    padding: 15px 20px;
+    color: var(--color-white);
+    border: 1px solid var(--color-bg-green);
+    background-color: unset;
+    &:hover{
+      padding: 20px 35px;
+    }
   }
 }
 
