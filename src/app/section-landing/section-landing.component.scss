@@ -23,7 +23,7 @@ main{
   top: 0;
   position: relative;
   width: 100dvw;
-  height: 40dvh;
+  height: 50dvh;
   display: flex;
   justify-content: center;
 
@@ -32,26 +32,29 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    img{
-      height: 100%;
+    .background-color, .img-photo{
       position: absolute;
+      width: 100%;
+      height: 100%;
     }  
     .background-color{
-      width: 100dvw;
-      height: 100%;
       object-position: center;
     }
     .img-photo{
-      object-fit: cover;
-      height: 108%;
+      object-fit: contain;
     }
   } 
-  .vector{
+  .vector-mobile{
     position: absolute;
-    width: 100dvw;
+    width: 100%;
     top: 50%;
-    object-fit: fill;
+    left: 0;
+    right: 0;
+    object-fit: contain;
   }
+}
+.vector-desktop{
+  display: none;
 }
 
 footer, article{
@@ -78,7 +81,8 @@ article{
 
     .vertical{
       font-size: 20px;
-      transform: rotate(-90deg);
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
     }
     .horizontal{
       display: flex;
@@ -123,4 +127,37 @@ footer{
     justify-content: center;
     gap: 16px;
   }
+}
+
+@media(width > 480px){
+  main{
+    width: 100dvw;
+  }
+  .container-content{
+    flex-direction: row;
+    width: 100%;
+    .container-photo{
+      width: 50%;
+    }
+  }
+  .container-profile{
+    width: 50dvw;
+  }
+  article{
+    width: 50dvw;
+    padding: unset;
+    background-color: transparent;
+  }
+ .vector-mobile{
+  display: none;
+ }
+ .vector-desktop{
+  position: absolute;
+  width: 100dvw;
+  object-fit: cover;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+ }
 }
