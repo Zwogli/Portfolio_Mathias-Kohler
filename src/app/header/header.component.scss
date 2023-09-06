@@ -17,7 +17,7 @@ div{
   align-items: center;
   h1{
     margin: unset;
-    font-size: 30px;
+    font-size: var(--font-size-h1-mobile);
   }
   div{
     a{

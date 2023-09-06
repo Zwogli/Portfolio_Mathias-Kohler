@@ -17,12 +17,12 @@ section{
     h3{
       margin: unset;
       color: var(--color-bg-purple);
-      font-size: 24px;
+      font-size: var(--font-size-h3-mobile);
     }
     .subheadline{
       margin: unset;
       color: var(--color-bg-green);
-      font-size: 20px;
+      font-size: var(--font-size-subheadline-mobile);
     }
     p{
       text-align: center;
