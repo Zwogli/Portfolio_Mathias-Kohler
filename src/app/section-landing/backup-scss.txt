@@ -1,5 +1,4 @@
-main{
-  position: relative;
+section{
   padding-top: 75px;
   padding-bottom: 16px;
   height: calc(100dvh - 75px - 16px);
@@ -82,20 +81,18 @@ main{
   }
 }
 
-footer{
-  position: absolute;
-  bottom: 16px;
+.section-end{
   width: 100dvw;
   display: flex;
   align-items: center;
   justify-content: center;
-  .bar-socialmedia{
+  .social-bar{
     position: absolute;
     width: 20dvw;
     border-top: 2px solid var(--color-bg-purple);
     left: 0;
   }
-  .img-socialmedia{
+  .social{
     width: 100%;
     border-top: none;
     display: flex;

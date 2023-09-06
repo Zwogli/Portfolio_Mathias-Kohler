@@ -1,5 +1,5 @@
-<main id="section-landing">
-
+<section id="section-landing">
+  
   <div class="container-photo">
     <img
       class="background-color"
@@ -25,16 +25,15 @@
         <button class="btn btn-green">Let´s talk!</button>
       </a>
     </div>
-
   </div>
 
-  <footer>
-    <span class="bar-socialmedia"></span>
+  <div class="section-end">
+    <span class="social-bar"></span>
 
-    <div class="img-socialmedia">
+    <div class="social">
       <img class="link" src="assets/gitHub.png" alt="gitHub" />
       <img class="link" src="assets/email.png" alt="email" />
       <img class="link" src="assets/linkedIn.png" alt="linkedIn" />
     </div>
-  </footer>
-</main>
+  </div>
+</section>
