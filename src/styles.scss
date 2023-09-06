@@ -12,6 +12,9 @@
   --padding-mobile: 0 10%;
   --gap-mobile: 24px;
 }
+html {
+  scroll-behavior: smooth;
+}
 html,
 body, h2, p {
   margin: 0;
