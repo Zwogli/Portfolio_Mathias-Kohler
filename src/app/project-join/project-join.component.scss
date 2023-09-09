@@ -35,3 +35,16 @@ main{
     }
   }
 }
+
+@media(width >= 850px){
+  main{
+    flex-direction: row-reverse;
+    img{
+      width: 45dvw;
+      object-fit: contain;
+    }
+    article{
+      width: 45dvw;
+    }
+  }
+}
