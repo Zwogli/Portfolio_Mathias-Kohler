@@ -57,3 +57,33 @@ p{
 .container-btn-hover{
   margin: 16px 0;
 }
+
+@media(width > 850px){
+  main{
+    flex-direction: row-reverse;
+    .section-intro{
+      width: 45%;
+      p{
+        padding: 0 10% 0 0;
+      }
+    }
+    .container-skills{
+      width: 55%;
+      padding: 0 0 0 10%;
+    }
+  }
+  
+  .headline-skills{
+    h2{
+      padding: 0 10% 0 0;
+    }
+    .skill-bar{
+      width: 10dvw;
+    }
+  }
+
+  .container-btn-hover{
+    display: none;
+  }
+
+}
