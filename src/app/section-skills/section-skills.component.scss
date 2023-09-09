@@ -58,7 +58,7 @@ p{
   margin: 16px 0;
 }
 
-@media(width > 850px){
+@media(width >= 850px){
   main{
     flex-direction: row-reverse;
     .section-intro{
