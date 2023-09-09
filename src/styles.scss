@@ -93,9 +93,9 @@ a {
   color: var(--color-bg-green);
 }
 
-@media(width > 340px){
+@media(width >= 400px){
   .btn-purple, .btn-border{
-    padding: 15px 30px;
+    padding: 15px 30px !important;
     &:hover{
       padding: 20px 40px;
     }
