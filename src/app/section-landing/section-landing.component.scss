@@ -1,4 +1,5 @@
 main{
+  overflow: hidden;
   position: relative;
   padding-top: 75px;
   padding-bottom: 16px;
@@ -32,6 +33,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 40dvh;
     .background-color, .img-photo{
       position: absolute;
       width: 100%;
@@ -44,17 +46,12 @@ main{
       object-fit: contain;
     }
   } 
-  .vector-mobile{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    right: 0;
-    object-fit: contain;
-  }
 }
-.vector-desktop{
-  display: none;
+.vector{
+  position: absolute;
+  left: 0;
+  width: 900px;
+  top: -80px;
 }
 
 footer, article{
@@ -62,7 +59,7 @@ footer, article{
 }
 
 article{
-  margin-top: 5%;
+  margin-top: 3%;
   padding: var(--padding-mobile);
   height: 45%;
   display: flex;
@@ -129,10 +126,18 @@ footer{
   }
 }
 
-@media(width > 480px){
-  main{
-    width: 100dvw;
+@media(width < 850px) and (height >= 550px){
+  .vector{
+    top: -45px;
   }
+}
+@media(width < 850px) and (height >= 650px){
+  .vector{
+    top: 90px;
+  }
+}
+
+@media(width >= 850px){
   .container-content{
     flex-direction: row;
     width: 100%;
@@ -142,22 +147,65 @@ footer{
   }
   .container-profile{
     width: 50dvw;
+    height: 50dvh;
   }
   article{
+    padding: 0 10% 0 0;
+    margin-top: unset;
     width: 50dvw;
-    padding: unset;
+    // padding: unset;
     background-color: transparent;
+
+    .welcome{
+      .vertical{
+        font-size: 35px;
+      }
+      .horizontal{
+        .info-name{
+          font-size: var(--font-size-h2-tablat);
+        }
+        .info-description{
+          font-size: var(--font-size-h3-tablat);
+        }
+      }
+    }
   }
- .vector-mobile{
-  display: none;
- }
- .vector-desktop{
-  position: absolute;
-  width: 100dvw;
-  object-fit: cover;
-  top: 50%;
-  right: 0;
-  left: 0;
-  display: flex;
- }
+ .vector{
+  width: 2000px;
+  top: -235px;
 }
+}
+
+@media(width >= 850px) and (height < 800px){
+  .vector{
+    top: -340px;
+  }
+}
+@media(width >= 850px) and (height > 1100px){
+  .vector{
+  top: -100px;
+  }
+}
+
+@media(width >= 1300px){
+  .welcome{
+    .vertical{
+      font-size: 60px!important;
+    }
+    .horizontal{
+      .info-name{
+        font-size: var(--font-size-h2-desktop)!important;
+      }
+      .info-description{
+        font-size: var(--font-size-h3-desktop)!important;
+      }
+    }
+  }
+}
+
+@media(width >= 1900px){
+  .vector{
+    width: 3000px;
+    top: -425px;
+    }
+  }
