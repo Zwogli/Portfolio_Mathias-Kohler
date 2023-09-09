@@ -160,8 +160,8 @@ footer{
     padding: 0 10% 0 0;
     margin-top: unset;
     width: 50dvw;
-    // padding: unset;
     background-color: transparent;
+    gap: 16px;
 
     .welcome{
       .vertical{
@@ -194,10 +194,13 @@ footer{
   }
 }
 
-@media(width >= 1300px){
+@media(width >= 1590px){
+  article{
+    gap: 32px;
+  }
   .welcome{
     .vertical{
-      font-size: 60px!important;
+      font-size: 52px!important;
     }
     .horizontal{
       .info-name{
@@ -205,6 +208,7 @@ footer{
       }
       .info-description{
         font-size: var(--font-size-h3-desktop)!important;
+        margin-top: -40px;
       }
     }
   }
@@ -213,6 +217,7 @@ footer{
 @media(width >= 1900px){
   .vector{
     width: 3000px;
+    
     top: -425px;
     }
   }
