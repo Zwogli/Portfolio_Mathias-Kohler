@@ -2,6 +2,21 @@ main{
   margin-top: var(--margin-section-mobile);
 }
 
+.bg-shadow{
+  margin-top: -250px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  img{
+    height: 395px;
+    margin-left: -260px;
+    object-fit: cover;
+    opacity: 0.8;
+    transform: rotate(15deg) scaleY(-1);
+  }
+}
+
 .headline-portfolio{
   display: flex;
   justify-content: center;
@@ -20,6 +35,7 @@ main{
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     right: 0;
+    z-index: 1;
   }
 }
 p{
@@ -29,4 +45,15 @@ p{
 }
 article{
   padding: var(--padding-mobile);
+}
+
+@media(width >=850px){
+  .bg-shadow{
+    margin-top: -230px;
+    img{
+      height: 525px;
+    margin-left: -180px;
+    transform: rotate(-9deg) scaleY(-1);
+    }
+  }
 }
