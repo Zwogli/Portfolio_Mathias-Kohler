@@ -9,47 +9,47 @@ export class SectionSkillsComponent {
   skills = [
     {
       name: 'Angular',
-      img: 'assets/icons_mobile/Angular.png',
+      img: 'assets/icons/Angular.png',
     },
     {
       name: 'Rest-Api',
-      img: 'assets/icons_mobile/Api.png',
+      img: 'assets/icons/Api.png',
     },
     {
       name: 'CSS',
-      img: 'assets/icons_mobile/css.png',
+      img: 'assets/icons/css.png',
     },
     {
       name: 'Firebase',
-      img: 'assets/icons_mobile/Firebase.png',
+      img: 'assets/icons/Firebase.png',
     },
     {
       name: 'GIT',
-      img: 'assets/icons_mobile/Git.png',
+      img: 'assets/icons/Git.png',
     },
     {
       name: 'HTML',
-      img: 'assets/icons_mobile/html.png',
+      img: 'assets/icons/html.png',
     },
     {
       name: 'JavaScript',
-      img: 'assets/icons_mobile/JavScript.png',
+      img: 'assets/icons/JavScript.png',
     },
     {
       name: 'Material design',
-      img: 'assets/icons_mobile/materialDesign.png',
+      img: 'assets/icons/materialDesign.png',
     },
     {
       name: 'Scrum',
-      img: 'assets/icons_mobile/Scrum.png',
+      img: 'assets/icons/Scrum.png',
     },
     {
       name: 'Typescript',
-      img: 'assets/icons_mobile/Typescript.png',
+      img: 'assets/icons/Typescript.png',
     },
     {
       name: 'Wordpress',
-      img: 'assets/icons_mobile/WordPress.png',
+      img: 'assets/icons/WordPress.png',
     },
   ];
 }
