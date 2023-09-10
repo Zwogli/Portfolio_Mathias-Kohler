@@ -25,7 +25,7 @@ p{
     gap: 8px;
     .skill-bar{
       width: calc(10% - 8px);
-      border-top: 2px solid var(--color-bg-purple);
+      border-top: var(--border-heigth) solid var(--color-bg-purple);
       right: 0;
     }
     h2{

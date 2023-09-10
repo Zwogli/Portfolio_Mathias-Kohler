@@ -114,7 +114,7 @@ footer{
   .bar-socialmedia{
     position: absolute;
     width: 20dvw;
-    border-top: 2px solid var(--color-bg-purple);
+    border-top: var(--border-heigth) solid var(--color-bg-purple);
     left: 0;
   }
   .img-socialmedia{

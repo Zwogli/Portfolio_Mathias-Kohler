@@ -29,6 +29,7 @@ main{
   }
   
   .bulb, .puzzle{
+    margin-top: var(--gap-mobile);
     display: flex;
     gap: var(--gap-mobile);
 
@@ -39,6 +40,37 @@ main{
     img{
       width: 50px;
       height: 50px;
+    }
+  }
+}
+
+.show-desktop{
+  display:none;
+}
+
+@media(width >= 850px){
+  .show-desktop{
+    display: flex;
+  }
+  article{
+    display: flex;
+    justify-content: space-between;
+    .profil-text, .profil-img{
+      width: 45%;
+    }
+  }
+  .profil-img{
+    .img-container{
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      
+      img{
+        border-radius: 50%;
+        border: var(--border-heigth) solid var(--color-bg-green);
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

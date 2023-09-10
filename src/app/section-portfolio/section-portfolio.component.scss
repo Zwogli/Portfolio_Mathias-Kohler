@@ -16,7 +16,7 @@ main{
   .portfolio-bar{
     position: absolute;
     width: 80dvw;
-    border-top: 2px solid var(--color-bg-purple);
+    border-top: var(--border-heigth) solid var(--color-bg-purple);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     right: 0;
