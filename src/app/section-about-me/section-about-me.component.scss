@@ -1,23 +1,40 @@
 main{
+  position: relative;
   margin-top: var(--margin-section-mobile);
   padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
   gap: var(--gap-mobile);
-  // background-image: url(/assets/backgrounds/Purple-shadow-1.png);
-  // background-size: 300px 500px;
-  // background-position: top -19px right -132px;
-  // background-repeat: no-repeat;
+
+  .bg-shadow{
+    margin-top: -200px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    img{
+      height: 500px;
+      transform: rotate(-20deg);
+      margin-right: -250px;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
   
   .container-aboutMe{
     display: flex;
     flex-direction: column;
     gap: var(--gap-mobile);
+    z-index: 5;
   }
   
   .bulb, .puzzle{
     display: flex;
     gap: var(--gap-mobile);
+
+    p{
+      z-index: 5;
+    }
   
     img{
       width: 50px;
