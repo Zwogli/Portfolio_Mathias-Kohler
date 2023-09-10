@@ -2,6 +2,7 @@
   display: none;
 }
 main{
+  position: relative;
   padding: 16px 10%;
   border-top: var(--border-heigth) solid var(--color-bg-green);
   display: flex;
@@ -9,6 +10,8 @@ main{
   justify-content: center;
   align-items: center;
   gap: 16px;
+  z-index: 1;
+  background-color: var(--color-bg-darkBlue);
 
   h1{
     margin: 0px;

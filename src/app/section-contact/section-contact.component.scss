@@ -5,6 +5,37 @@ main{
   gap: var(--gap-mobile);
 }
 
+.bg-shadow-top{
+  margin-top: -250px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  img{
+    height: 412px;
+    margin-right: -223px;
+    object-fit: cover;
+    opacity: 0.8;
+    transform: rotate(80deg) scaleY(1);
+  }
+}
+
+.bg-shadow-bottom{
+  margin-top: 790px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 50%;
+  img{
+    height: 380px;
+    margin-left: -211px;
+    object-fit: cover;
+    opacity: 0.8;
+    transform: rotate(-96deg) scaleY(1);
+  }
+}
+
 .headline-contact{
   display: flex;
   justify-content: flex-start;
@@ -79,6 +110,12 @@ form{
 }
 
 @media(width >= 850px){
+  .bg-shadow-top{
+    margin-top: -390px;
+    img{
+      height: 520px;
+    }
+  }
   aside{
     display: flex;
     flex-direction: row;
