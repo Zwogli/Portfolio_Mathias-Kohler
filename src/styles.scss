@@ -6,29 +6,23 @@
   --color-bg-purple: #9747ff;
   --color-bg-green: #70e61c;
   --color-bg-inputs: #1b2740;
-
-  --border-heigth: 4px;
-
+  
   --margin-section-mobile: 64px;
-
+  
   --padding-mobile: 0 10%;
-
+  
+  --border-heigth: 4px;
   --gap-mobile: 24px;
 
-  --font-size-h1-mobile: 30px;
-  --font-size-h2-mobile: 24px;
-  --font-size-h3-mobile: 22px;
-  --font-size-subheadline-mobile: 20px;
+  --font-size-logo: 30px;
+  --font-size-subheadline-mobile: 23px;
+  --font-size-text: 16px;
+  --font-size-btn-text-desktop: 23px;
 
   --font-size-h2-tablat: 40px;
   --font-size-h3-tablat: 32px;
-
   --font-size-h2-desktop: 90px;
   --font-size-h3-desktop: 50px;
-  --font-size-subheadline-mobile: 23px;
-
-  --font-size-text: 16px;
-  --font-size-btn-text-desktop: 23px;
 }
 html {
   scroll-behavior: smooth;
@@ -49,7 +43,12 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
+h2{
+  font-size: 45px;
+}
+h3{
+  font-size: 23px;
+}
 .link {
   cursor: pointer;
 }
@@ -111,6 +110,9 @@ a {
 @media(width >= 850px){
   h2{
     font-size: 60px;
+  }
+  h3{
+    font-size: 32px;
   }
   .container-btn-hover{
     .btn{
