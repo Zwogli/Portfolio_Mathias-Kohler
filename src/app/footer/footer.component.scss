@@ -1,3 +1,6 @@
+.show-desktop{
+  display: none;
+}
 main{
   padding: 16px 10%;
   border-top: var(--border-heigth) solid var(--color-bg-green);
@@ -41,4 +44,32 @@ main{
   border: 3px solid;
   top: 15px;
   left: 0px;
+}
+
+@media(width >=850px){
+  .show-mobile{
+    display: none;
+  }
+  .show-desktop{
+    display: flex;
+  }
+  main{
+    height: calc(290px - 4px);
+    padding: 0px 10%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1{
+    font-size:60px!important;
+  }
+  .i-bar{
+    border: 8px solid;
+    top: 11px;
+    left: 1px;
+  }
+  .t-bar{
+    width: 14px;
+    border: 5px solid;
+    top: 29px;
+  }
 }
