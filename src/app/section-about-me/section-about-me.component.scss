@@ -60,16 +60,24 @@ main{
     }
   }
   .profil-img{
+    display: flex;
+    align-items: center;
     .img-container{
-      width: 100%;
+      width: calc(100% - 8px);
       max-width: 400px;
       aspect-ratio: 1/1;
       
+      border-radius: 50%;
+      border: var(--border-heigth) solid var(--color-bg-green);
+      overflow: hidden;
+      background-color: var(--color-bg-inputs);
       img{
-        border-radius: 50%;
-        border: var(--border-heigth) solid var(--color-bg-green);
-        width: 100%;
+        margin-top: 0px;
+        margin-left: -109px;
+        width: 140%;
         object-fit: cover;
+        object-position: 50% 50%;
+        transform: scaleX(-1);
       }
     }
   }
