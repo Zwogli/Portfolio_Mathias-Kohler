@@ -49,6 +49,9 @@ main{
 }
 
 @media(width >= 850px){
+  h2{
+    font-size: 60px;
+  }
   .show-desktop{
     display: flex;
   }
@@ -61,12 +64,21 @@ main{
   }
   .profil-img{
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    .bar{
+      width: 30%;
+      position: absolute;
+      right: 0;
+      border: var(--border-heigth) solid var(--color-bg-green);
+      z-index: 1;
+    }
     .img-container{
       width: calc(100% - 8px);
       max-width: 400px;
       aspect-ratio: 1/1;
-      
+      z-index: 2;
       border-radius: 50%;
       border: var(--border-heigth) solid var(--color-bg-green);
       overflow: hidden;
