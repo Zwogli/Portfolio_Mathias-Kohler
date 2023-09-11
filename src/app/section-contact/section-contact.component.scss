@@ -1,5 +1,6 @@
 main{
   margin-top: var(--margin-section-mobile);
+  scroll-margin-top: var(--scroll-margin-mobile);
   display: flex;
   flex-direction: column;
   gap: var(--gap-mobile);
@@ -112,7 +113,8 @@ form{
 
 @media(width >= 850px){
   main{
-    scroll-margin-top: 120px;
+    margin-top: var(--margin-section-desktop);
+    scroll-margin-top: var(--scroll-margin-desktop);
   }
   .bg-shadow-top{
     margin-top: -390px;

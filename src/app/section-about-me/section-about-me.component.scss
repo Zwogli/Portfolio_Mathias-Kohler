@@ -1,6 +1,7 @@
 main{
-  position: relative;
   margin-top: var(--margin-section-mobile);
+  scroll-margin-top: var(--scroll-margin-mobile);
+  position: relative;
   padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
@@ -51,7 +52,8 @@ main{
 
 @media(width >= 850px){
   main{
-    scroll-margin-top: 120px;
+    margin-top: var(--margin-section-desktop);
+    scroll-margin-top: var(--scroll-margin-desktop);
   }
   .show-desktop{
     display: flex;
