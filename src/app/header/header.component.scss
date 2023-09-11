@@ -27,10 +27,16 @@ main{
   }
 }
 
+.show-mobile{
+  display: flex;
+}
+.show-desktop{
+  display: none;
+}
+
 #hamburgermenu{
   width: 30px;
   height: 30px;
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   .bar{
@@ -63,4 +69,34 @@ main{
   border: 3px solid;
   top: 15px;
   left: 0px;
+}
+
+@media(width >= 850px){
+  main{
+    height: 90px;  
+  }
+  h1{
+    font-size: 60px!important;
+  }
+  .i-bar {
+    border: 8px solid;
+    top: 11px;
+  }
+  .t-bar{
+    width: 14px;
+    border: 5px solid;
+    top: 28px;
+  }
+  .show-mobile{
+    display: none;
+  }
+  .show-desktop{
+    display: flex;
+    gap: 24px;
+    a{
+      font-size: 32px;
+      
+    }
+  }
+  
 }

@@ -48,6 +48,9 @@ article{
 }
 
 @media(width >=850px){
+  main{
+    scroll-margin-top: 120px;
+  }
   .bg-shadow{
     margin-top: -230px;
     img{
