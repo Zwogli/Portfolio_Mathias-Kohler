@@ -21,7 +21,7 @@ main{
 }
 
 .bg-shadow-bottom{
-  margin-top: 790px;
+  margin-top: -320px;
   position: absolute;
   left: 0;
   z-index: 1;
@@ -71,6 +71,7 @@ form{
   flex-direction: column;
   align-items: center;
   gap: var(--gap-mobile);
+  z-index: 2;
 
   input::placeholder,textarea::placeholder{
     color: var(--color-white);
@@ -114,6 +115,13 @@ form{
     margin-top: -390px;
     img{
       height: 520px;
+    }
+  }
+  .bg-shadow-bottom{
+    margin-top: -440px;
+    img{
+      height: 750px;
+    margin-left: -315px;
     }
   }
   aside{
