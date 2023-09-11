@@ -1,16 +1,15 @@
 main{
   position: relative;
-  height: calc(100dvh - 75px);
+  height: calc(100% - 9px);
   width: 100dvw;
 }
+
 article{
-  top: 75px;
-  height: 100%;
+  height: calc(100% - 62px);
   width: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .profil{
@@ -26,13 +25,21 @@ article{
     width: 100%;
   }
 }
+
 .introduction{
+  height: 45%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 5;
+  .introduction-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 figure{
+  margin: unset;
   display: flex;
   .text-vertical{
     text-align: center;
@@ -40,11 +47,38 @@ figure{
     transform: rotate(180deg);
   }
   .name{
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: -5px;
   }
   .job{
     color: var(--color-bg-purple);
     text-transform: uppercase;
+  }
+}
+
+footer{
+  width: 100dvw;
+  position: absolute;
+  bottom: 0px;
+  z-index: 5;
+  display: flex;
+}
+.footer-bar-img{
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .container-img{
+    width: calc(100% - 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .bar-socialmedia{
+    width: 10dvw;
+    border-top: var(--border-heigth) solid var(--color-bg-purple);
   }
 }
