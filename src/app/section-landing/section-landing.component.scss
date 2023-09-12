@@ -3,7 +3,21 @@ main{
   height: calc(100% - 9px);
   width: 100dvw;
 }
+.container{
+  height: 60%;
+  width: 100%;
+ display: flex;
+}
 
+.vector{
+  overflow: visible;
+  height: 50%;
+  width: 100dvw;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
 article{
   height: calc(100% - 62px);
   width: 100%;
@@ -14,7 +28,7 @@ article{
 }
 .profil{
   overflow: hidden;
-  height: 60%;
+  height: 100%;
   width: 100%;
   position: relative;
   display: flex;
