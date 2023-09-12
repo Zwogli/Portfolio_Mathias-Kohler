@@ -22,12 +22,14 @@ article{
   align-items: center;
   img{
     position: absolute;
-    // top: -10px;
-    width: 100%;
+  }
+  .background-color{
+    top: -25px;
+    height: 150%;
   }
   .img-photo{
+    height: 100%;
     object-fit: cover;
-    // object-position: 50px 50px;
   }
 }
 
