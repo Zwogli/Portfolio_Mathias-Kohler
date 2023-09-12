@@ -217,13 +217,25 @@ footer{
     .bar-socialmedia{
       border-top: var(--border-heigth) solid var(--color-bg-purple);
     }
-    .scroll{
+    .scroll-container{
+      width: 30px;
+      height: 130px;
       display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       bottom: 32px;
       right: 10dvw;
-      writing-mode: vertical-rl;
-      white-space: nowrap;
+      .scroll{
+        display: flex;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+  
+        &:hover{
+          color: var(--color-bg-green);
+          font-size: 20px;
+        }
+      }
     }
   }
 }
