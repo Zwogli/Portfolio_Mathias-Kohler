@@ -83,9 +83,9 @@ main{
     align-items: center;
 
     .bar{
-      width: 30%;
+      width: 75%;
       position: absolute;
-      right: 0;
+      right: calc(0px - 10dvw);
       border-top: var(--border-heigth) solid var(--color-bg-green);
       z-index: 1;
     }
