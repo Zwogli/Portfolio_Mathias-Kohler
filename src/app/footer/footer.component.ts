@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  location(path){
+    if(path === '#section-contact'){
+      window.location.href = path;
+    }else(
+      window.open(path, '_blank')
+    )
+  }
 }

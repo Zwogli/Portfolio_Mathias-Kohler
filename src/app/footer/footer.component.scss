@@ -24,6 +24,19 @@ main{
     display: flex;
     flex-direction: row;
     gap: var(--gap-mobile);
+    .hover-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      img{
+        cursor: pointer;
+      }
+      .img:hover{
+        width: 40px;
+      }
+    }
   }
 }
 .i {
