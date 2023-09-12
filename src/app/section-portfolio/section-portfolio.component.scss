@@ -53,6 +53,11 @@ article{
     margin-top: var(--margin-section-desktop);
     scroll-margin-top: var(--scroll-margin-desktop);
   }
+  .headline-portfolio{
+    h2{
+      padding: 0 32px;
+    }
+  }
   .bg-shadow{
     margin-top: -230px;
     img{

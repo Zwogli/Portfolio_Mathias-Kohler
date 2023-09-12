@@ -129,12 +129,16 @@ form{
     margin-left: -315px;
     }
   }
+  .headline-contact{
+    gap: 32px;
+  }
   aside{
     display: flex;
     flex-direction: row;
     gap: 5%;
     .info{
       width: 40%;
+      padding-left: calc(10% + 32px);
       padding-right: unset;
     }
     form{

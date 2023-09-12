@@ -72,12 +72,6 @@ p{
         position: absolute;
         width: 40px;
         aspect-ratio: 1/1;
-
-        // &:hover{
-        //   transition: ease-in-out ;
-        //   animation: jump 250ms;
-        // }
-        
       }
     }
   }
@@ -106,13 +100,14 @@ p{
       width: 45%;
       
       .headline-skills{
+        gap: 32px;
         .skill-bar{
           width: calc(10dvw - 8px);
         }
       }
 
       p{
-        padding: 0 10dvw 0 0;
+        padding: 0 calc(10dvw + 32px) 0 0;
       }
     }
     .container-skills{
