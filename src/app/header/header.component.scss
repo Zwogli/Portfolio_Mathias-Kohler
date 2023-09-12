@@ -101,6 +101,10 @@ main{
     gap: 24px;
     a{
       font-size: 32px;
+      &:hover{
+        transition: ease-in 100ms;
+        color: var(--color-bg-green)!important;
+      }
     }
   }
   
