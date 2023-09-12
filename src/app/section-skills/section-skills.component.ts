@@ -52,4 +52,9 @@ export class SectionSkillsComponent {
       img: 'assets/icons/WordPress.png',
     },
   ];
+
+  location(path){
+      window.location.href = path;
+  }
 }
+
