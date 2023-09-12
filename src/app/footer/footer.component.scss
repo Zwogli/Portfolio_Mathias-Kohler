@@ -13,9 +13,11 @@ main{
   z-index: 1;
   background-color: var(--color-bg-darkBlue);
 
-  h1{
-    margin: 0px;
+  .logo{
     font-size: var(--font-size-logo);
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
   }
   .socialmedia{
     border-top: none;
@@ -62,7 +64,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
   }
-  h1{
+  .logo{
     font-size:60px!important;
   }
   .i-bar{

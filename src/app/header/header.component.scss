@@ -15,15 +15,11 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h1{
-    margin: unset;
+  .logo{
     font-size: var(--font-size-logo);
-  }
-  div{
-    a{
-      color: var(--color-white);
-      text-decoration: none;
-    }
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
   }
 }
 
@@ -75,7 +71,7 @@ main{
   main{
     height: 90px;  
   }
-  h1{
+  .logo{
     font-size: 60px!important;
   }
   .i-bar {
