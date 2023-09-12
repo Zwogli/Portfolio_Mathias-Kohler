@@ -39,11 +39,22 @@
     <span class="bar-socialmedia"></span>
 
     <div class="container-img">
-      <img class="img" src="assets/gitHub.png" alt="gitHub" />
-      <img class="img" src="assets/email.png" alt="email" />
-      <img class="img" src="assets/linkedIn.png" alt="linkedIn" />
+
+      <div class="hover-container">
+        <img (click)="location('https://github.com/Zwogli')" class="img" src="assets/gitHub.png" alt="gitHub" />
+      </div>
+
+      <div class="hover-container">
+        <img (click)="location('#section-contact')" class="img" src="assets/email.png" alt="email" />
+      </div>
+
+      <div class="hover-container">
+        <img (click)="location('https://www.linkedin.com/in/mathias-kohler-0531a6231/')" class="img" src="assets/linkedIn.png" alt="linkedIn" />
+      </div>
+      
     </div>
-    <a class="show-tablat" href="mailto:mathiaskohler@mail.de">mathiaskohler@mail.de</a>
+
+    <a class="show-tablat" href="#section-contact">mathiaskohler@mail.de</a>
     <a class="scroll" href="#about-me">Scroll down &#x279C;</a>
   </footer>
 </main>
