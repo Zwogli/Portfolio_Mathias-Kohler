@@ -73,9 +73,9 @@ main{
   article{
     display: flex;
     justify-content: space-between;
-    .profil-text, .profil-img{
-      width: 45%;
-    }
+  }
+  .aos-container, .profil-img{
+    width: 45%;
   }
   .profil-img{
     display: flex;
