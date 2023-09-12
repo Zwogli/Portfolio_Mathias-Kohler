@@ -44,11 +44,41 @@ p{
     width: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    img{
-      width: 40px;
+
+    &:hover{
+      color: var(--color-bg-green);
+      .container-img{
+        img{
+          animation: jump 400ms;
+        }
+      } 
+    }
+
+    span:hover{
+      transform: scale(unset);
+    }
+
+    .container-img{
+      width: 100%;
+      aspect-ratio: 1/1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        position: absolute;
+        width: 40px;
+        aspect-ratio: 1/1;
+
+        // &:hover{
+        //   transition: ease-in-out ;
+        //   animation: jump 250ms;
+        // }
+        
+      }
     }
   }
   .icons_mobile{
@@ -89,8 +119,10 @@ p{
       width: 45%;
       padding: 0 0 0 10%;
       .skills{
-        img{
-          width: 60px;
+        .container-img{
+          img{
+            width: 60px;
+          }
         }
       }
     }
@@ -104,5 +136,28 @@ p{
   }
   .container-btn-hover{
     justify-content: center;
+  }
+}
+
+@keyframes jump{
+ 0%{
+  transition: ease-in-out;
+      transform: scale(1.2);
+ }
+ 25%{
+      transition: ease-in-out;
+      transform: scale(0.8);
+  }
+  50%{
+        transition: ease-in-out;
+        transform: scale(1.1);
+  }
+  75%{
+      transition: ease-in-out;
+    transform: scale(0.9);
+}
+  100%{
+      transition: ease-in-out;
+        transform: scale(1);
   }
 }
