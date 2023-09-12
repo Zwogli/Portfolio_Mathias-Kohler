@@ -52,9 +52,20 @@ main{
 }
 
 @media(width >= 850px){
+ 
   main{
     margin-top: var(--margin-section-desktop);
     scroll-margin-top: var(--scroll-margin-desktop);
+
+    .bg-shadow{
+      margin-top: -340px;
+      img{
+        height: 500px;
+        transform: rotate(-20deg);
+        margin-right: -250px;
+        opacity: unset;
+      }
+    }
   }
   .show-desktop{
     display: flex;
