@@ -1,8 +1,9 @@
 main{
   position: relative;
-  height: calc(100% - 9px);
+  padding-top: 75px;
+  height: calc(100dvh - 75px);
   width: 100dvw;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 75px;
 }
 .container-profil{
   height: 60%;
@@ -139,6 +140,10 @@ footer{
 }
 
 @media(width >=850px){
+  main{
+    padding-top: 90px;
+    height: calc(100dvh - 90px);
+  }
   article{
     flex-direction: row;
   }

@@ -23,6 +23,12 @@ main{
   }
 }
 
+.nav{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .show-mobile{
   display: flex;
 }
@@ -88,10 +94,13 @@ main{
   }
   .show-desktop{
     display: flex;
+  }
+  .menu{
+    height: 100%;
+    align-items: center;
     gap: 24px;
     a{
       font-size: 32px;
-      
     }
   }
   
