@@ -45,6 +45,11 @@ main{
     }
     article{
       width: 45dvw;
+      align-items: flex-start;
+      
+      p{
+        text-align: start;
+      }
     }
   }
 }
