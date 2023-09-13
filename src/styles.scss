@@ -5,6 +5,7 @@
   --color-bg-purple: #9747ff;
   --color-bg-green: #70e61c;
   --color-bg-inputs: #1b2740;
+  --color-bg-inputs-transparency: rgba(27,39,64, 0.8);
   
   --margin-section-mobile: 64px;
   --margin-section-desktop: 128px;
@@ -28,7 +29,7 @@
   --font-size-h3-desktop: 50px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Tags
+element tag
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 html {
   scroll-behavior: smooth;
@@ -56,7 +57,7 @@ h3{
   font-size: 23px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Btn
+element btn
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .container__btn--hover{
   height: 70px;
@@ -106,18 +107,54 @@ Btn
   border: unset;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Other
+element logo
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.logo {
+  font-size: var(--font-size-logo);
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.logo__t {
+  color: var(--color-white);
+  position: relative;
+  &--bar {
+    width: 6px;
+    color: var(--color-bg-green);
+    position: absolute;
+    border: 3px solid;
+    top: 15px;
+    left: 0px;
+  }
+}
+.logo__i {
+  color: var(--color-white);
+  position: relative;
+  &--bar {
+    color: var(--color-bg-purple);
+    position: absolute;
+    border: 4px solid;
+    border-radius: 50%;
+    top: 6px;
+    left: 0px;
+  }
+}
+.logo__s{
+  color: var(--color-bg-green);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+other
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .link {
   cursor: pointer;
 }
-.s{
-  color: var(--color-bg-green);
+.stopScrollY{
+  overflow-y: hidden;
 }
 
 @media(width >= 400px){
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-  Media width >= 400px, Btn
+  media width >= 400px, element btn
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   .btn--purple, .btn__border--green{
     padding: 15px 30px;
@@ -129,7 +166,7 @@ Other
 
 @media(width >= 900px){
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-  Media width >= 900px, Tags
+  media width >= 900px, element tags
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   h2{
     font-size: 60px;
@@ -138,11 +175,26 @@ Other
     font-size: 32px;
   }
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-  Media width >= 900px, Btn
+  media width >= 900px, element btn
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   .container__btn--hover{
     .btn{
       font-size: 23px;
     }
+  }
+   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 900px, element logo
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .logo {
+    font-size: 60px;
+  }
+  .logo__i--bar {
+    border: 8px solid;
+    top: 11px;
+    left: 1px;  }
+  .logo__t--bar {
+    width: 14px;
+    border: 5px solid;
+    top: 29px;
   }
 }

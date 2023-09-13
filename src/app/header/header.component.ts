@@ -6,4 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  checkWidthDesktop:boolean;
+
+  menuToggle(){
+    let menu = document.getElementById('drop-down-menu');
+    let body = document.getElementById('body');
+    menu.classList.toggle('transform');
+    body.classList.toggle('stopScrollY');
+}
+
+  // ngOnInit(){
+  //   window.addEventListener("resize", this.checkWindowSize);
+  // }
+
+  // checkWindowSize() {
+  //   if(window.innerWidth >= 850 && !this.checkWidthDesktop){
+  //     this.checkWidthDesktop = true;
+  //     this.menuToggle('desktop');
+  //   }else if(window.innerWidth < 850 && this.checkWidthDesktop){
+  //     this.checkWidthDesktop = false;
+  //     this.menuToggle('mobile');
+  //   }
+  // }
+
+  // menuToggle(device:string){
+  //   let menu = document.getElementById('drop-down-menu');
+  //   if(device === 'mobile'){
+  //     menu.classList.toggle('transform');
+  //   }else  
+  //   if(device === 'desktop'){
+  //     menu.classList.remove('transform');
+  //   }  
+  // }
+
+ 
 }

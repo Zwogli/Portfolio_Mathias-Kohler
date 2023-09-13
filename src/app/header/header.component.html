@@ -1,23 +1,38 @@
-<main>
-  
-  <div class="header">
-    <a class="logo" href="#section-landing">Ma<span class="t">t<span class="t-bar"></span></span>h<span class="i">i<span class="i-bar"></span></span>a<span class="s">s</span></a>
-  
-    <div class="nav">
+<header>
+  <a class="logo" href="#section-landing">
+    Ma
+    <span class="logo__t"
+      >t
+      <span class="logo__t--bar"></span>
+    </span>
+    h
+    <span class="logo__i"
+      >i
+      <span class="logo__i--bar"></span>
+    </span>
+    a
+    <span class="logo__s">s</span>
+  </a>
 
-      <div id="hamburgermenu" class="link show-mobile">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+  <div class="nav">
+    <div id="hamburgermenu" (click)="menuToggle()" class="link show-mobile">
+      <span class="hamburgerbar"></span>
+      <span class="hamburgerbar"></span>
+      <span class="hamburgerbar"></span>
+    </div>
 
-      <div class="menu show-desktop">
-        <a href="#about-me">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-      </div>
-
+    <div class="menu show-desktop">
+      <a href="#about-me">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
     </div>
   </div>
 
-</main>
+  <div id="drop-down-menu" class="hamburgermenu__dropDownMenu">
+    <a (click)="menuToggle()" href="#about-me">About me</a>
+    <a (click)="menuToggle()" href="#skills">Skills</a>
+    <a (click)="menuToggle()" href="#portfolio">Portfolio</a>
+    <a (click)="menuToggle()" href="#section-contact">Contact</a>
+  </div>
+</header>
+

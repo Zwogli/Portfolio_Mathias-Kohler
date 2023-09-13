@@ -1,0 +1,15 @@
+app-header{
+  height: 75px;
+  width: calc(100dvw);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+@media(width >= 850px){
+  app-header{
+    height: 90px;  
+  }
+}
