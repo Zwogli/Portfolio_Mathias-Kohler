@@ -86,7 +86,7 @@ p{
 .hide-mobile{
   display: none;
 }
-.container-btn-hover{
+.container__btn--hover{
   margin: 16px 0;
 }
 
@@ -130,7 +130,7 @@ p{
   .hide-mobile{
     display: flex;
   }
-  .container-btn-hover{
+  .container__btn--hover{
     justify-content: center;
   }
 }

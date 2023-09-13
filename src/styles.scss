@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 :root {
   --color-white: white;
   --color-bg-darkBlue: #141d2f;
@@ -28,6 +27,9 @@
   --font-size-h2-desktop: 90px;
   --font-size-h3-desktop: 50px;
 }
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Tags
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 html {
   scroll-behavior: smooth;
 }
@@ -53,62 +55,71 @@ h2{
 h3{
   font-size: 23px;
 }
-.link {
-  cursor: pointer;
-}
-.container-btn-hover{
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Btn
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.container__btn--hover{
   height: 70px;
   display: flex;
   align-items: center;
-  .btn{
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    &:hover{
-      cursor: pointer;
-      padding: 20px 40px;
-    }
+}
+.btn{
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  &:hover{
+    cursor: pointer;
+    padding: 20px 40px;
   }
 }
-.btn-green {
-  border: none;
+.btn--green, .btn--purple, .btn__border--green{
   color: var(--color-white);
+}
+.btn--green {
   background-color: var(--color-bg-green);
+  border: none;
   &:hover {
     background-color: var(--color-bg-purple);
   }
 }
-.btn-purple{
+.btn--purple, .btn__border--green{
   padding: 15px 20px;
-  color: var(--color-white);
+  &:hover{
+    padding: 20px 35px;
+    background-color: var(--color-bg-green);
+    border: unset;
+  }
+}
+.btn--purple{
   background-color: var(--color-bg-purple);
   border: unset;
 }
-.btn-border{
-  padding: 15px 20px;
-  color: var(--color-white);
-  border: 1px solid var(--color-bg-green);
+.btn__border--green{
   background-color: unset;
+  border: 1px solid var(--color-bg-green);
 }
 
-.btn-purple:hover, .btn-border:hover{
-  padding: 20px 35px;
-  background-color: var(--color-bg-green);
-  border: unset;
-}
-.btn-purple:active, .btn-border:active, .btn-green:active{
+.btn--purple:active, .btn__border--green:active, .btn--green:active{
   background-color: var(--color-white);
   color: var(--color-bg-purple);
   border: unset;
 }
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Other
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.link {
+  cursor: pointer;
+}
 .s{
   color: var(--color-bg-green);
 }
 
 @media(width >= 400px){
-  .btn-purple, .btn-border{
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  Media width >= 400px, Btn
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .btn--purple, .btn__border--green{
     padding: 15px 30px;
     &:hover{
       padding: 20px 40px;
@@ -117,13 +128,19 @@ h3{
 }
 
 @media(width >= 900px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  Media width >= 900px, Tags
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   h2{
     font-size: 60px;
   }
   h3{
     font-size: 32px;
   }
-  .container-btn-hover{
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  Media width >= 900px, Btn
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .container__btn--hover{
     .btn{
       font-size: 23px;
     }
