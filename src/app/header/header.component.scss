@@ -55,7 +55,7 @@ header {
   background: transparent;
   &::before, &::after{
     top: 0;
-    background-color: var(--color-bg-purple);
+    background-color: var(--color-bg-green);
   }
   &::before{
     transform: rotate(-225deg);
