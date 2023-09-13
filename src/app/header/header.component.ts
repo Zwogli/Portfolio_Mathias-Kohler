@@ -10,8 +10,10 @@ export class HeaderComponent {
 
   menuToggle(){
     let menu = document.getElementById('drop-down-menu');
+    let hamburgerbar = document.getElementById('hamburgerbar');
     let body = document.getElementById('body');
     menu.classList.toggle('transform');
+    hamburgerbar.classList.toggle('transform--x');
     body.classList.toggle('stopScrollY');
 }
 
