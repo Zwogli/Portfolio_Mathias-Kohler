@@ -16,9 +16,9 @@
 
   <div class="nav">
     <div id="hamburgermenu" (click)="menuToggle()" class="link show-mobile">
+      <!-- <span class="hamburgerbar"></span> -->
       <span class="hamburgerbar"></span>
-      <span class="hamburgerbar"></span>
-      <span class="hamburgerbar"></span>
+      <!-- <span class="hamburgerbar"></span> -->
     </div>
 
     <div class="menu show-desktop">
@@ -29,20 +29,20 @@
   </div>
 
   <div id="drop-down-menu" class="hamburgermenu__dropDownMenu">
-    <button class="hamburgermenu__dropDownMenu--container">
-      <a (click)="menuToggle()" href="#about-me">About me</a>
+    <button onclick="menuToggle()" class="hamburgermenu__dropDownMenu--container">
+      <a  href="#about-me">About me</a>
       <span></span>
     </button>
-    <button class="hamburgermenu__dropDownMenu--container">
-      <a (click)="menuToggle()" href="#skills">Skills</a>
+    <button (click)="menuToggle()" class="hamburgermenu__dropDownMenu--container">
+      <a href="#skills">Skills</a>
       <span></span>
     </button>
-    <button class="hamburgermenu__dropDownMenu--container">
-      <a (click)="menuToggle()" href="#portfolio">Portfolio</a>
+    <button (click)="menuToggle()" class="hamburgermenu__dropDownMenu--container">
+      <a href="#portfolio">Portfolio</a>
       <span></span>
     </button>
-    <button class="hamburgermenu__dropDownMenu--container">
-      <a (click)="menuToggle()" href="#section-contact">Contact</a>
+    <button (click)="menuToggle()" class="hamburgermenu__dropDownMenu--container">
+      <a href="#section-contact">Contact</a>
       <span></span>
     </button>
   </div>
