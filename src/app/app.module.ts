@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionPortfolioComponent } from './section-portfolio/section-portfolio.component';
 import { ProjectElPolloLocoComponent } from './project-el-pollo-loco/project-el-pollo-loco.component';
 import { ProjectJoinComponent } from './project-join/project-join.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { ProjectJoinComponent } from './project-join/project-join.component';
     ProjectJoinComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],

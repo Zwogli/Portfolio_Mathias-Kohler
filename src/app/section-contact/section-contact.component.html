@@ -22,12 +22,12 @@
         <p>Need a Frontend developer? <span class="contact-me">Contact me!</span></p>
       </div>
   
-    <form action="">
-      <input type="text" placeholder="Your name" required>
+    <form (submit)="sendMail()" ngNativeValidate #contactForm>
+      <input name="name" type="text" placeholder="Your name" #nameField required>
       <input type="email" placeholder="Your email" required>
-      <textarea name="" id="" cols="30" rows="15" placeholder="Your message" required></textarea>
+      <textarea name="message" id="" cols="30" rows="15" placeholder="Your message" #messageField required></textarea>
       <div class="container__btn--hover">
-        <button class="btn btn--green">Send message</button>
+        <button #sendButton class="btn btn--green">Send message</button>
       </div>
     </form>
   </aside>
