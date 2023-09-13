@@ -29,10 +29,22 @@
   </div>
 
   <div id="drop-down-menu" class="hamburgermenu__dropDownMenu">
-    <a (click)="menuToggle()" href="#about-me">About me</a>
-    <a (click)="menuToggle()" href="#skills">Skills</a>
-    <a (click)="menuToggle()" href="#portfolio">Portfolio</a>
-    <a (click)="menuToggle()" href="#section-contact">Contact</a>
+    <button class="hamburgermenu__dropDownMenu--container">
+      <a (click)="menuToggle()" href="#about-me">About me</a>
+      <span></span>
+    </button>
+    <button class="hamburgermenu__dropDownMenu--container">
+      <a (click)="menuToggle()" href="#skills">Skills</a>
+      <span></span>
+    </button>
+    <button class="hamburgermenu__dropDownMenu--container">
+      <a (click)="menuToggle()" href="#portfolio">Portfolio</a>
+      <span></span>
+    </button>
+    <button class="hamburgermenu__dropDownMenu--container">
+      <a (click)="menuToggle()" href="#section-contact">Contact</a>
+      <span></span>
+    </button>
   </div>
 </header>
 

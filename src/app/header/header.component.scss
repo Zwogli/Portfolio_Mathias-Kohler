@@ -50,11 +50,25 @@ header {
 
   transform: translateX(calc(100dvw + 100px));
   transition: all 250ms ease-in-out;
-
+}
+.hamburgermenu__dropDownMenu--container{
+  background-color: unset;
+  border: unset;
+  &:hover{
+    a{
+      color: var(--color-bg-green);
+    }
+    span{
+        width: 50%;
+        display: flex;
+        border-bottom: var(--border-heigth) solid var(--color-bg-purple);
+      }
+  }
   a{
     font-size: 23px;
   }
 }
+
 .transform{
   transform: translateX(0px);
 }
