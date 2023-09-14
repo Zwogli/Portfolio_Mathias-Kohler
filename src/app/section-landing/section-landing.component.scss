@@ -51,7 +51,7 @@ main {
   align-items: center;
   z-index: 5;
   flex-direction: column;
-  .container__btn--hover{
+  .container__btn--hover {
     justify-content: center;
   }
 }
@@ -141,7 +141,7 @@ footer {
   media width >= 600px, element
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   .introduction {
-      gap: 16px;
+    gap: 16px;
   }
 }
 
@@ -180,14 +180,14 @@ footer {
     &--img {
       left: 20%;
     }
-    
+
     img {
       position: absolute;
     }
   }
 
   .introduction {
-      gap: 32px;
+    gap: 32px;
   }
 
   figure {
