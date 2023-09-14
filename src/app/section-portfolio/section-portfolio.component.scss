@@ -1,9 +1,7 @@
-main{
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
-}
-
-.bg-shadow{
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+element
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.background__shadow{
   margin-top: -250px;
   position: absolute;
   left: 0;
@@ -18,25 +16,33 @@ main{
   }
 }
 
-.headline-portfolio{
+header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 8px;
   position: relative;
-  h2{
-    z-index: 1;
-    background-color: var(--color-bg-darkBlue);
-    padding: 0 5px;
-  }
-  .portfolio-bar{
-    position: absolute;
-    width: 80dvw;
-    border-top: var(--border-heigth) solid var(--color-bg-purple);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    right: 0;
-    z-index: 1;
+  .headline{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      z-index: 1;
+      background-color: var(--color-bg-darkBlue);
+      padding: 0 5px;
+    }
+    span{
+      position: absolute;
+      width: 80dvw;
+      border-top: var(--border-heigth) solid var(--color-bg-purple);
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      right: 0;
+      z-index: 1;
+    }
   }
 }
 p{
@@ -49,16 +55,17 @@ article{
 }
 
 @media(width >=850px){
-  main{
-    margin-top: var(--margin-section-desktop);
-    scroll-margin-top: var(--scroll-margin-desktop);
-  }
-  .headline-portfolio{
-    h2{
-      padding: 0 32px;
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  header{
+    .headline{
+      h2{
+        padding: 0 16px;
+      }
     }
   }
-  .bg-shadow{
+  .background__shadow{
     margin-top: -230px;
     img{
       height: 525px;
