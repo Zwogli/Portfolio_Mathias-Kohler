@@ -1,25 +1,7 @@
-main{
-  position: relative;
-  padding-top: 75px;
-  height: calc(100dvh - 75px);
-  width: 100dvw;
-  scroll-margin-top: 75px;
-}
-.container-profil{
-  height: 60%;
-  width: 100%;
-  display: flex;
- .vector{
-   height: 50%;
-   width: 100dvw;
-   position: absolute;
-   top: 35%;
-   left: 0;
-   right: 0;
- }
-}
-
-article{
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+element
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+main {
   height: calc(100% - 72px - 75px);
   width: 100%;
   position: absolute;
@@ -27,7 +9,21 @@ article{
   flex-direction: column;
   align-items: center;
 }
-.profil{
+.profil {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  &__vector {
+    height: 50%;
+    width: 100dvw;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+  }
+}
+
+.profil__container {
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -35,53 +31,52 @@ article{
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
+  img {
     position: absolute;
   }
-  .background-color{
+  &--background {
     top: -10px;
     height: 150%;
   }
-  .img-photo{
+  &--img {
     height: 100%;
     object-fit: cover;
   }
 }
 
-.introduction{
+.introduction {
   height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5;
-  .introduction-btn{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  flex-direction: column;
+  .container__btn--hover{
+    justify-content: center;
   }
 }
-figure{
+figure {
   margin: unset;
   display: flex;
-  .text-vertical{
+  .text--vertical {
     font-size: 21px;
     text-align: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
   }
-  .name{
+  .text--horizontal-name {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: -10px;
   }
-  .job{
+  .text--horizontal-job {
     color: var(--color-bg-purple);
     font-size: 21px;
     text-transform: uppercase;
   }
 }
 
-footer{
+footer {
   width: 100dvw;
   position: absolute;
   bottom: 0px;
@@ -91,85 +86,83 @@ footer{
   align-items: center;
   justify-content: center;
 
-  .container-img{
+  .container__socialmedia {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
-    .hover-container{
+    .container__socialmedia--hover {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 40px;
       height: 40px;
-      img{
+      img {
         cursor: pointer;
       }
-      .img:hover{
+      img:hover {
         width: 40px;
       }
     }
   }
-  .bar-socialmedia{
+  .bar__socialmedia {
     position: absolute;
     left: 0;
     width: 10dvw;
     border-top: var(--border-heigth) solid var(--color-bg-purple);
   }
-  .show-tablat{
+  .show-tablat {
     display: none;
   }
-  .scroll{
+  .container__scroll--anchor {
     display: none;
   }
 }
 
-@media(width >= 550px){
-  footer{
-    justify-content:  flex-start;
+@media (width >= 550px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 500px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  footer {
+    justify-content: flex-start;
     gap: 32px;
-  
-    .container-img{
+
+    .container__socialmedia {
       padding-left: calc(10dvw + 32px);
     }
-    .bar-socialmedia{
-      position: absolute;
-      left: 0;
-      width: 10dvw;
-      border-top: var(--border-heigth) solid var(--color-bg-purple);
-    }
-    .show-tablat{
+    .show-tablat {
       display: flex;
     }
   }
 }
 
-@media(height >= 600px){
-  .introduction{
-    .introduction-btn{
-    gap: 16px;
-    }
+@media (height >= 600px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 600px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .introduction {
+      gap: 16px;
   }
 }
 
-@media(width >=850px){
-  main{
-    padding-top: 90px;
-    height: calc(100dvh - 90px);
-  }
-  article{
+@media (width >=850px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  main {
     flex-direction: row;
   }
-  .container-profil, .introduction{
+  .profil,
+  .introduction {
     width: 50%;
     height: 80%;
   }
-  .container-profil{
-    .vector{
+  .profil {
+    &__vector {
       top: 69%;
     }
   }
-  .profil{
+  .profil__container {
     overflow: visible;
     height: 100%;
     width: 100%;
@@ -177,47 +170,44 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-      position: absolute;
-    }
-    .background-color{
+
+    &--background {
       width: 110%;
       height: 110%;
       top: 0px;
       left: 0px;
     }
-    .img-photo{
+    &--img {
       left: 20%;
     }
-  }
-
-  .introduction{
-    .introduction-btn{
-    gap: 32px;
+    
+    img {
+      position: absolute;
     }
   }
 
-  figure{
-    .text-vertical{
+  .introduction {
+      gap: 32px;
+  }
+
+  figure {
+    .text--vertical {
       font-size: 27px;
     }
-    .name{
+    .text--horizontal-name {
       font-size: 40px;
       margin-bottom: -15px;
     }
-    .job{
-    font-size: 29px;
+    .text--horizontal-job {
+      font-size: 29px;
     }
   }
-  footer{
+  footer {
     padding: 32px 0;
-    .container-img{
+    .container__socialmedia {
       gap: 32px;
     }
-    .bar-socialmedia{
-      border-top: var(--border-heigth) solid var(--color-bg-purple);
-    }
-    .scroll-container{
+    .container__scroll {
       width: 30px;
       height: 130px;
       display: flex;
@@ -227,12 +217,12 @@ footer{
       bottom: 32px;
       right: 10dvw;
       animation: test 2s infinite, rotate 1s infinite;
-      .scroll{
+      .container__scroll--anchor {
         display: flex;
         writing-mode: vertical-rl;
         white-space: nowrap;
-  
-        &:hover{
+
+        &:hover {
           color: var(--color-bg-green);
           font-size: 20px;
         }
@@ -241,29 +231,35 @@ footer{
   }
 }
 
-@keyframes test{
+@keyframes test {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  keyframes
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   0% {
-      transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
   }
   50% {
-      transform: translateY(-20px) scale(1.05);
+    transform: translateY(-20px) scale(1.05);
   }
   100% {
-      transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
   }
 }
 
-@media(width >=1200px){
-  figure{
-    .text-vertical{
+@media (width >=1200px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 1200px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  figure {
+    .text--vertical {
       font-size: 40px;
     }
-    .name{
+    .text--horizontal-name {
       font-size: 60px;
       margin-bottom: -25px;
     }
-    .job{
-    font-size: 43px;
+    .text--horizontal-job {
+      font-size: 43px;
     }
   }
 }

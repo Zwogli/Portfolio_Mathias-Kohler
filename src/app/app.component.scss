@@ -8,6 +8,15 @@ app-header{
   z-index: 10;
 }
 
+app-section-landing{
+  display: flex;
+  position: relative;
+  padding-top: 75px;
+  height: calc(100dvh - 75px);
+  width: 100dvw;
+  scroll-margin-top: 75px;
+}
+
 app-footer{
   width: calc(100dvw - 20%);
   position: relative;
@@ -23,8 +32,16 @@ app-footer{
 }
 
 @media(width >= 850px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, app
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   app-header{
     height: 90px;  
+  }
+
+  app-section-landing{
+    padding-top: 90px;
+    height: calc(100dvh - 90px);
   }
 
   app-footer{
