@@ -11,6 +11,7 @@ global
 element
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 header {
+  width: calc(100% - var(--padding-mobile));
   height: 100%;
   padding: var(--padding-mobile);
   background-color: var(--color-bg-darkBlue);
@@ -18,25 +19,17 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.nav {
+nav {
   height: 100%;
   display: flex;
   align-items: center;
 }
 .hamburgermenu {
-  // position: relative;
-  // width: 30px;
-  // height: 30px;
-  // justify-content: space-between;
-  // flex-direction: column;
   height: 30px;
   width: 30px;
   align-items: center;
 }
 .hamburgerbar, .hamburgerbar::before, .hamburgerbar::after {
-  // width: 100%;
-  // border: 1px solid var(--color-white);
-  // border-radius: 1px;
   position: absolute;
   content: "";
   width: 30px;
@@ -64,7 +57,7 @@ header {
     transform: rotate(225deg);
   }
 }
-.hamburgermenu__dropDownMenu {
+aside {
   background-color: var(--color-bg-inputs-transparency);
   height: calc(100dvh - 75px);
   width: 100dvw;
@@ -78,7 +71,7 @@ header {
   align-items: center;
   gap: 32px;
 
-  transform: translateX(calc(100dvw + 100px));
+  transform: translateX(calc(100dvw + 500px));
   transition: all 250ms ease-in-out;
 }
 .hamburgermenu__dropDownMenu--container {
@@ -116,7 +109,7 @@ header {
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   media width >= 850px, element
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  .menu {
+  .menu__desktop {
     height: 100%;
     align-items: center;
     gap: 24px;
@@ -134,7 +127,7 @@ header {
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   media width >= 1100px, element
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  .menu {
+  .menu__desktop {
     gap: 64px;
     a {
       font-size: 32px;

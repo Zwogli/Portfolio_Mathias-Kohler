@@ -14,21 +14,19 @@
     <span class="logo__s">s</span>
   </a>
 
-  <div class="nav">
+  <nav>
     <div id="hamburgermenu" (click)="menuToggle()" class="link show-mobile hamburgermenu">
-      <!-- <span class="hamburgerbar"></span> -->
       <span id="hamburgerbar" class="hamburgerbar"></span>
-      <!-- <span class="hamburgerbar"></span> -->
     </div>
 
-    <div class="menu show-desktop">
+    <div class="menu__desktop show-desktop">
       <a href="#about-me">About me</a>
       <a href="#skills">Skills</a>
       <a href="#portfolio">Portfolio</a>
     </div>
-  </div>
+  </nav>
 
-  <div id="drop-down-menu" class="hamburgermenu__dropDownMenu">
+  <aside id="drop-down-menu">
 
     <button (click)="menuToggle()" class="hamburgermenu__dropDownMenu--container">
       <a  href="#about-me">About me</a>
@@ -50,6 +48,6 @@
       <span></span>
     </button>
 
-  </div>
+  </aside>
 </header>
 
