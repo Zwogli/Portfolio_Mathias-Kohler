@@ -1,5 +1,5 @@
 app-header{
-  // width: 100dvw;
+  width: calc(100dvw);
   height: 75px;
   position: fixed;
   top: 0;
@@ -8,8 +8,29 @@ app-header{
   z-index: 10;
 }
 
+app-footer{
+  width: calc(100dvw - 20%);
+  position: relative;
+  padding: 16px 10%;
+  border-top: var(--border-heigth) solid var(--color-bg-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+  background-color: var(--color-bg-darkBlue);
+}
+
 @media(width >= 850px){
   app-header{
     height: 90px;  
+  }
+
+  app-footer{
+    height: calc(290px - 4px);
+    padding: 0px 10%;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
