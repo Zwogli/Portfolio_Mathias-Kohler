@@ -1,33 +1,31 @@
-<main id="skills" data-aos="zoom-in-up" data-aos-offset="150">
-  <div class="section-intro">
-    <div class="headline-skills">
-      <span class="skill-bar"></span>
-      <h2>My skills</h2>
-    </div>
-    <p>
-      I have gained experience in building projects with various front end
-      technologies and concepts.
-    </p>
-
-    <div class="container__btn--hover hide-mobile">
-      <a (click)="location('#section-contact')">
-        <button class="btn btn--green">Get in touch</button>
-      </a>
-    </div>
+<header>
+  <div class="headline">
+    <span class="skill-bar"></span>
+    <h2>My skills</h2>
   </div>
+  <p>
+    I have gained experience in building projects with various front end
+    technologies and concepts.
+  </p>
 
-  <div class="container-skills">
-    
-    <div *ngFor="let skill of skills"  class="skills">
-      <div class="container-img"><img src="{{ skill.img }}" alt=""></div>
-      <span>{{ skill.name }}</span>
-    </div>
-    
-  </div> 
-
-  <div class="container__btn--hover hide-desktop">
+  <div class="container__btn--hover hide-mobile">
     <a (click)="location('#section-contact')">
       <button class="btn btn--green">Get in touch</button>
     </a>
   </div>
+</header>
+
+<main class="container-skills">
+
+  <div *ngFor="let skill of skills" class="skill__container">
+    <div class="skill__container--hover"><img src="{{ skill.img }}" alt="" /></div>
+    <span>{{ skill.name }}</span>
+  </div>
+
 </main>
+
+<div class="container__btn--hover hide-desktop">
+  <a (click)="location('#section-contact')">
+    <button class="btn btn--green">Get in touch</button>
+  </a>
+</div>

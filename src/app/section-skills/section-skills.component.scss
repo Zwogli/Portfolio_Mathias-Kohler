@@ -1,47 +1,43 @@
-main{
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--gap-mobile);
-}
-p{
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+element
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+p {
   margin-top: unset;
   text-align: end;
 }
-.section-intro{
+header {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--gap-mobile);
 
-  p{
+  p {
     padding: var(--padding-mobile);
   }
 
-  .headline-skills{
+  .headline {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     gap: 8px;
-    .skill-bar{
+
+    span {
       width: calc(10% - 8px);
       border-top: var(--border-heigth) solid var(--color-bg-purple);
       right: 0;
     }
-    h2{
+    h2 {
       text-align: end;
     }
   }
 }
-.container-skills{
+main {
   padding: var(--padding-mobile);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  .skills{
+  .skill__container {
     width: 80px;
     display: flex;
     flex-direction: column;
@@ -49,34 +45,34 @@ p{
     align-items: center;
     text-align: center;
 
-    &:hover{
+    &:hover {
       color: var(--color-bg-green);
-      .container-img{
-        img{
+      .skill__container--hover {
+        img {
           animation: jump 400ms;
         }
-      } 
+      }
     }
 
-    span:hover{
+    span:hover {
       transform: scale(unset);
     }
 
-    .container-img{
+    .skill__container--hover {
       width: 100%;
       aspect-ratio: 1/1;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         position: absolute;
         width: 40px;
         aspect-ratio: 1/1;
       }
     }
   }
-  .icons_mobile{
+  .icons_mobile {
     width: 50px;
     height: 50px;
     display: flex;
@@ -84,77 +80,78 @@ p{
     align-items: center;
   }
 }
-.hide-mobile{
+.hide-mobile {
   display: none;
 }
-.container__btn--hover{
+.container__btn--hover {
   margin: 16px 0;
 }
 
-@media(width >= 850px){
-  main{
-    margin-top: var(--margin-section-desktop);
-    flex-direction: row-reverse;
-    position: relative;
-    scroll-margin-top: var(--scroll-margin-desktop);
-    .section-intro{
-      width: 45%;
-      
-      .headline-skills{
-        gap: 32px;
-        .skill-bar{
-          width: calc(10dvw - 8px);
-        }
-      }
+@media (width >= 850px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  header {
+    width: 45%;
 
-      p{
-        padding: 0 calc(10dvw + 32px) 0 0;
+    .headline {
+      gap: 32px;
+      
+      span {
+        width: calc(10dvw);
       }
     }
-    .container-skills{
-      width: 45%;
-      padding: 0 0 0 10%;
-      gap: 32px;
-      .skills{
-        .container-img{
-          img{
-            width: 60px;
-          }
+
+    p {
+      padding: 0 calc(10dvw + 32px) 0 0;
+    }
+  }
+  main {
+    width: 45%;
+    padding: 0 0 0 10%;
+    gap: 32px;
+    .skill__container {
+      .skill__container--hover {
+        img {
+          width: 60px;
         }
       }
     }
   }
 
-  .hide-desktop{
+  .hide-desktop {
     display: none;
   }
-  .hide-mobile{
+  .hide-mobile {
     display: flex;
   }
-  .container__btn--hover{
+  .container__btn--hover {
     justify-content: center;
   }
 }
 
-@keyframes jump{
- 0%{
-  transition: ease-in-out;
-      transform: scale(1.2);
- }
- 25%{
-      transition: ease-in-out;
-      transform: scale(0.8);
+@keyframes jump {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  keyframe
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  0% {
+    transition: ease-in-out;
+    transform: scale(1.2);
   }
-  50%{
-        transition: ease-in-out;
-        transform: scale(1.1);
+  25% {
+    transition: ease-in-out;
+    transform: scale(0.8);
   }
-  75%{
-      transition: ease-in-out;
+  50% {
+    transition: ease-in-out;
+    transform: scale(1.1);
+  }
+  75% {
+    transition: ease-in-out;
     transform: scale(0.9);
-}
-  100%{
-      transition: ease-in-out;
-        transform: scale(1);
+  }
+  100% {
+    transition: ease-in-out;
+    transform: scale(1);
   }
 }
