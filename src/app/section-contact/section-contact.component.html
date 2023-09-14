@@ -1,48 +1,65 @@
-<main id="section-contact" >
-
-  <div class="bg-shadow-top">
-    <img src="assets/backgrounds/Green-shadow-3-skill-portfolio.png" alt="green shadow 1">
+<main>
+  <div class="background__shadow--top">
+    <img
+      src="assets/backgrounds/Green-shadow-3-skill-portfolio.png"
+      alt="green shadow 1"
+    />
   </div>
 
   <div data-aos="zoom-in-up" data-aos-offset="200">
 
-  
-  <div class="headline-contact">
-    <span class="contact-bar"></span>
-    <h2>Contact</h2>
-  </div>
-  
-  <aside>
-  
+    <header>
+      <span></span>
+      <h2>Contact</h2>
+    </header>
+
+    <article>
       <div class="info">
         <h3>Got a problem to solve?</h3>
         <p>
-          Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
+          Contact me through this form, I am interested in hearing you, knowing
+          your ideas and contributing to your projects with my work.
         </p>
-        <p>Need a Frontend developer? <span class="contact-me">Contact me!</span></p>
+        <p>
+          Need a Frontend developer? <span class="contact-me">Contact me!</span>
+        </p>
       </div>
-  
-    <form (submit)="sendMail()" ngNativeValidate #contactForm>
-      <input name="name" type="text" placeholder="Your name" #nameField required>
-      <input type="email" placeholder="Your email" required>
-      <textarea name="message" id="" cols="30" rows="15" placeholder="Your message" #messageField required></textarea>
-      <div class="container__btn--hover">
-        <button #sendButton class="btn btn--green">Send message</button>
-      </div>
-    </form>
-  </aside>
 
-  <div class="goUp">
-    <a href="#section-landing">
-      <img class="img-goUp" src="assets/goUp_white.png" alt="go Up">
-    </a>
+      <form (submit)="sendMail()" ngNativeValidate #contactForm>
+        <input
+          name="name"
+          type="text"
+          placeholder="Your name"
+          #nameField
+          required
+        />
+        <input type="email" placeholder="Your email" required />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="15"
+          placeholder="Your message"
+          #messageField
+          required
+        ></textarea>
+        <div class="container__btn--hover">
+          <button #sendButton class="btn btn--green">Send message</button>
+        </div>
+      </form>
+    </article>
+
+    <div class="goUp">
+      <a href="#section-landing">
+        <img class="goUp--img" src="assets/goUp_white.png" alt="go Up" />
+      </a>
+    </div>
   </div>
-
-</div>
-
 </main>
 
-  <div class="bg-shadow-bottom">
-    <img src="assets/backgrounds/Purple-shadow-footer-v1-portfolio.png" alt="Purple shadow 1">
-  </div>
-  
+<div class="background__shadow--bottom">
+  <img
+    src="assets/backgrounds/Purple-shadow-footer-v1-portfolio.png"
+    alt="Purple shadow 1"
+  />
+</div>

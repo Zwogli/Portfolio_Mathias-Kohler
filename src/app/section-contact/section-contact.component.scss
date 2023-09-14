@@ -1,3 +1,6 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+element
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 main{
   margin-top: var(--margin-section-mobile);
   scroll-margin-top: var(--scroll-margin-mobile);
@@ -5,44 +8,12 @@ main{
   flex-direction: column;
   gap: var(--gap-mobile);
 }
-
-.bg-shadow-top{
-  margin-top: -250px;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  overflow: hidden;
-  img{
-    height: 412px;
-    margin-right: -223px;
-    object-fit: cover;
-    opacity: 0.8;
-    transform: rotate(80deg) scaleY(1);
-  }
-}
-
-.bg-shadow-bottom{
-  margin-top: -250px;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  overflow: hidden;
-  width: 50%;
-  img{
-    height: 380px;
-    margin-left: -211px;
-    object-fit: cover;
-    opacity: 0.8;
-    transform: rotate(-96deg) scaleY(1);
-  }
-}
-
-.headline-contact{
+header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  .contact-bar{
+  span{
     width: calc(10% - 8px);
     border-top: var(--border-heigth) solid var(--color-bg-purple);
     left: 0px;
@@ -63,6 +34,11 @@ main{
       font-weight: bold;
     }
   }
+}
+article{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-mobile);
 }
 
 form{
@@ -106,33 +82,57 @@ form{
   padding: 25px 10%;
   display: flex;
   justify-content: flex-end;
-  .img-goUp:hover{
+  .goUp--img:hover{
     content: url("/assets/goUp_green.png");
+  }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+background
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.background__shadow--top{
+  margin-top: -250px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  img{
+    height: 412px;
+    margin-right: -223px;
+    object-fit: cover;
+    opacity: 0.8;
+    transform: rotate(80deg) scaleY(1);
+  }
+}
+.background__shadow--bottom{
+  margin-top: -250px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 50%;
+  img{
+    height: 380px;
+    margin-left: -211px;
+    object-fit: cover;
+    opacity: 0.8;
+    transform: rotate(-96deg) scaleY(1);
   }
 }
 
 @media(width >= 850px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+ 
   main{
     margin-top: var(--margin-section-desktop);
     scroll-margin-top: var(--scroll-margin-desktop);
   }
-  .bg-shadow-top{
-    margin-top: -390px;
-    img{
-      height: 520px;
-    }
-  }
-  .bg-shadow-bottom{
-    margin-top: -500px;
-    img{
-      height: 750px;
-      margin-left: -315px;
-    }
-  }
-  .headline-contact{
+ 
+  header{
     gap: 32px;
   }
-  aside{
+  article{
     display: flex;
     flex-direction: row;
     gap: 5%;
@@ -148,5 +148,21 @@ form{
   }
   .goUp{
     padding: 50px 10%;
+  }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px, background
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .background__shadow--top{
+    margin-top: -390px;
+    img{
+      height: 520px;
+    }
+  }
+  .background__shadow--bottom{
+    margin-top: -500px;
+    img{
+      height: 750px;
+      margin-left: -315px;
+    }
   }
 }
