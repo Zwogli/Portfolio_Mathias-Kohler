@@ -38,7 +38,10 @@ html,
 body, h2, p {
   margin: 0;
 }
-
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   background-color: var(--color-bg-darkBlue);
   color: var(--color-white);
