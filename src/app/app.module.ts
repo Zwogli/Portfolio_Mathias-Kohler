@@ -35,7 +35,7 @@ import { ScreenImprintComponent } from './screen-imprint/screen-imprint.componen
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

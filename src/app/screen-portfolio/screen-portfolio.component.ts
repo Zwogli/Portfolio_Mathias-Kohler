@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import AOS from "aos";
 
 @Component({
   selector: 'app-screen-portfolio',
@@ -10,4 +11,7 @@ export class ScreenPortfolioComponent {
 
   constructor(private router: Router){}
 
+  ngOnInit(){
+    AOS.init();
+  }
 }
