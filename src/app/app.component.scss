@@ -1,96 +1,96 @@
-app-header{
-  width: calc(100dvw);
-  height: 75px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
+// app-header{
+//   width: calc(100dvw);
+//   height: 75px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 10;
+// }
 
-app-section-landing{
-  display: flex;
-  position: relative;
-  padding-top: 75px;
-  height: calc(100dvh - 75px);
-  width: 100dvw;
-  scroll-margin-top: 75px;
-}
+// app-section-landing{
+//   display: flex;
+//   position: relative;
+//   padding-top: 75px;
+//   height: calc(100dvh - 75px);
+//   width: 100dvw;
+//   scroll-margin-top: 75px;
+// }
 
-app-section-about-me{
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
-  position: relative;
-  padding: var(--padding-mobile);
-  display: flex;
-  flex-direction: column;
-  align-items: normal;
-  gap: var(--gap-mobile);
-}
+// app-section-about-me{
+//   margin-top: var(--margin-section-mobile);
+//   scroll-margin-top: var(--scroll-margin-mobile);
+//   position: relative;
+//   padding: var(--padding-mobile);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: normal;
+//   gap: var(--gap-mobile);
+// }
 
-app-section-skills{
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--gap-mobile);
-}
+// app-section-skills{
+//   margin-top: var(--margin-section-mobile);
+//   scroll-margin-top: var(--scroll-margin-mobile);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: var(--gap-mobile);
+// }
 
-app-section-portfolio{
-  display: block;
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
-}
+// app-section-portfolio{
+//   display: block;
+//   margin-top: var(--margin-section-mobile);
+//   scroll-margin-top: var(--scroll-margin-mobile);
+// }
 
-app-footer{
-  width: calc(100dvw - 20%);
-  position: relative;
-  padding: 16px 10%;
-  border-top: var(--border-heigth) solid var(--color-bg-green);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  z-index: 1;
-  background-color: var(--color-bg-darkBlue);
-}
+// app-footer{
+//   width: calc(100dvw - 20%);
+//   position: relative;
+//   padding: 16px 10%;
+//   border-top: var(--border-heigth) solid var(--color-bg-green);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 16px;
+//   z-index: 1;
+//   background-color: var(--color-bg-darkBlue);
+// }
 
-@media(width >= 850px){
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-  media width >= 850px, app
-  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  app-header{
-    height: 90px;  
-  }
+// @media(width >= 850px){
+//   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   media width >= 850px, app
+//   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+//   app-header{
+//     height: 90px;  
+//   }
 
-  app-section-landing{
-    padding-top: 90px;
-    height: calc(100dvh - 90px);
-  }
+//   app-section-landing{
+//     padding-top: 90px;
+//     height: calc(100dvh - 90px);
+//   }
 
-  app-section-about-me{
-    margin-top: var(--margin-section-desktop);
-    scroll-margin-top: var(--scroll-margin-desktop);
-  }
+//   app-section-about-me{
+//     margin-top: var(--margin-section-desktop);
+//     scroll-margin-top: var(--scroll-margin-desktop);
+//   }
 
-  app-section-skills{
-    margin-top: var(--margin-section-desktop);
-    flex-direction: row-reverse;
-    position: relative;
-    scroll-margin-top: var(--scroll-margin-desktop);
-  }
+//   app-section-skills{
+//     margin-top: var(--margin-section-desktop);
+//     flex-direction: row-reverse;
+//     position: relative;
+//     scroll-margin-top: var(--scroll-margin-desktop);
+//   }
 
-  app-section-portfolio{
-    margin-top: var(--margin-section-desktop);
-    scroll-margin-top: var(--scroll-margin-desktop);
-  }
+//   app-section-portfolio{
+//     margin-top: var(--margin-section-desktop);
+//     scroll-margin-top: var(--scroll-margin-desktop);
+//   }
 
-  app-footer{
-    height: calc(290px - 4px);
-    padding: 0px 10%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+//   app-footer{
+//     height: calc(290px - 4px);
+//     padding: 0px 10%;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+// }

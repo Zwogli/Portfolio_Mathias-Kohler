@@ -13,6 +13,8 @@ import { SectionPortfolioComponent } from './section-portfolio/section-portfolio
 import { ProjectElPolloLocoComponent } from './project-el-pollo-loco/project-el-pollo-loco.component';
 import { ProjectJoinComponent } from './project-join/project-join.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImprintComponent } from './imprint/imprint.component';
+import { ScreenPortfolioComponent } from './screen-portfolio/screen-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SectionPortfolioComponent,
     ProjectElPolloLocoComponent,
     ProjectJoinComponent,
+    ImprintComponent,
+    ScreenPortfolioComponent,
   ],
   imports: [
     FormsModule,
