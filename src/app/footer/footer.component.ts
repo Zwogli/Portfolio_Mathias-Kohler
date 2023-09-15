@@ -19,6 +19,7 @@ export class FooterComponent {
   }
 
   navigate(){
-    this.router.navigateByUrl('/imprint'); // Url = /game/id
+    let start = window.location.href = "imprint";
+    this.router.navigateByUrl('/imprint' + start); // Url = /game/id
   }
 }
