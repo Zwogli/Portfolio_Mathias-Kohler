@@ -24,7 +24,7 @@
         </p>
       </div>
 
-      <form (submit)="sendMail()" ngNativeValidate #contactForm>
+      <form #contactForm (submit)="sendMail()" ngNativeValidate > <!--autocomplete="off"-->
         <input
           name="name"
           #nameField
