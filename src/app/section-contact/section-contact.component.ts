@@ -16,7 +16,7 @@ export class SectionContactComponent {
   
 
   async sendMail(){
-    const action="https://mathias-kohler.developerakademie.net/php/send_mail-portfolio.php"
+    const action="https://mathias-kohler.developerakademie.net/portfolio-mathias-kohler/send_mail-portfolio.php"
 
     let nameField =this.nameField.nativeElement;
     let mailField =this.mailField.nativeElement;
@@ -38,7 +38,7 @@ export class SectionContactComponent {
     fd.append('message', messageField.value);
 
     // send
-    await fetch('https://mathias-kohler.developerakademie.net/php/send_mail-portfolio.php',
+    await fetch('https://mathias-kohler.developerakademie.net/portfolio-mathias-kohler/send_mail-portfolio.php',
     {
       method: 'POST',
       body: fd
