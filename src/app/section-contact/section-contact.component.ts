@@ -34,7 +34,7 @@ export class SectionContactComponent {
     /**send informations*/
     let  fd = new FormData();
     fd.append('name', nameField.value);
-    fd.append('mail', mailField.value);
+    fd.append('email', mailField.value);
     fd.append('message', messageField.value);
 
     // send
