@@ -8,6 +8,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class SectionContactComponent {
   @ViewChild('contactForm') contactForm: ElementRef;
   @ViewChild('nameField') nameField: ElementRef;
+  @ViewChild('mailField') mailField: ElementRef;
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
 
@@ -15,31 +16,39 @@ export class SectionContactComponent {
   
 
   async sendMail(){
-    //action="https://'path'"
+    const action="https://mathias-kohler.developerakademie.net/php/send_mail-portfolio.php"
 
     let nameField =this.nameField.nativeElement;
+    let mailField =this.mailField.nativeElement;
     let messageField =this.messageField.nativeElement;
     let senButton = this.sendButton.nativeElement;
 
+    /**disable input*/
     nameField.disable = true;
+    mailField.disable = true;
     messageField.disable = true;
     senButton.disable = true;
 
     // show animation
 
+    /**send informations*/
     let  fd = new FormData();
     fd.append('name', nameField.value);
+    fd.append('mail', mailField.value);
     fd.append('message', messageField.value);
-    //senden
-    //await fetch(path,
-    // {
-    //   method: 'POST'
-    // body: fd
-    // });
+
+    // send
+    await fetch('https://mathias-kohler.developerakademie.net/php/send_mail-portfolio.php',
+    {
+      method: 'POST',
+      body: fd
+    });
 
     // show send message
 
+    /**enable input*/
     nameField.disable = false;
+    mailField.disable = false;
     messageField.disable = false;
     senButton.disable = false;
   }

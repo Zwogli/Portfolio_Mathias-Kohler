@@ -50,7 +50,7 @@ form{
   gap: var(--gap-mobile);
   z-index: 2;
 
-  input::placeholder,textarea::placeholder{
+  input, textarea, input::placeholder,textarea::placeholder{
     color: var(--color-white);
     font-family: poppins;
   }
