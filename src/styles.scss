@@ -117,8 +117,12 @@ element logo
   font-weight: bold;
   color: var(--color-white);
   text-decoration: none;
+  & .h, .a{
+    margin-left: -6px;
+  }
 }
 .logo__t {
+  // margin: 0 -5px;
   color: var(--color-white);
   position: relative;
   &--bar {
@@ -131,6 +135,7 @@ element logo
   }
 }
 .logo__i {
+  // margin: 0 -5px;
   color: var(--color-white);
   position: relative;
   &--bar {
@@ -190,6 +195,9 @@ other
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   .logo {
     font-size: 60px;
+    & .h, .a{
+      margin-left: -11px;
+    }
   }
   .logo__i--bar {
     border: 8px solid;
