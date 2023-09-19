@@ -25,32 +25,50 @@
       </div>
 
       <form #contactForm (submit)="sendMail()" ngNativeValidate > <!--autocomplete="off"-->
-        <input
+        <div>
+          <input
+          id="input-name"
           name="name"
           #nameField
           type="text"
           placeholder="Your name"
-          required
-        />
-        <input
+          />
+          <label id="lable-input-name-missed" style="display: none;" for="input-name">
+            Your name is required
+          </label>
+        </div>
+
+        <div>
+          <input
+          id="input-email"
           name="email"
           #mailField
           type="email"
           placeholder="Your email"
-          required
-        />
-        <textarea
+          />
+          <label id="lable-input-email-missed" style="display: none;" for="input-email">
+            Your email is required
+          </label>
+        </div>
+
+        <div>
+          <textarea
+          id="input-message"
           name="message"
           #messageField
-          id=""
           cols="30"
           rows="15"
           placeholder="Your message"
-          required
-        ></textarea>
+          ></textarea>
+          <label id="lable-input-message-missed" style="display: none;" for="input-message">
+            Your message is empty
+          </label>
+        </div>
+
         <div class="container__btn--hover">
           <button #sendButton class="btn btn--green">Send message</button>
         </div>
+
       </form>
     </article>
 

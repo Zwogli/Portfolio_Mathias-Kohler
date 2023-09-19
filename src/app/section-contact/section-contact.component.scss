@@ -54,7 +54,9 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px var(--color-bg-inputs) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+form
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 form{
   margin: unset;
   padding: var(--padding-mobile);
@@ -64,6 +66,14 @@ form{
   gap: var(--gap-mobile);
   z-index: 2;
 
+  div{
+    width: 100%;
+  }
+
+  label{
+    width: 100%;
+    color: var(--color-bg-red);
+  }
   input, textarea, input::placeholder,textarea::placeholder{
     color: var(--color-white);
     font-family: poppins;
@@ -76,6 +86,7 @@ form{
     font-size: var(--font-size-text);
   }
   input{
+    position: relative;
     padding: 0 20px;
     height: 40px;
   }
@@ -89,7 +100,29 @@ form{
     border:1px solid var(--color-bg-green);
   }
 }
-
+.missedInput{
+  border: 1px solid var(--color-bg-red)!important;
+  background: url(../../assets/missed.png) no-repeat;
+  background-position: calc(100% - 20px);
+}
+.missedInput-message{
+  border: 1px solid var(--color-bg-red)!important;
+  background: url(../../assets/missed.png) no-repeat;
+  background-position: calc(100% - 20px) 20px;
+}
+.filledInput{
+  border: 1px solid var(--color-bg-green)!important;
+  background: url(../../assets/filled.png) no-repeat;
+  background-position: calc(100% - 20px);
+}
+.filledInput-message{
+  border: 1px solid var(--color-bg-green)!important;
+  background: url(../../assets/filled.png) no-repeat;
+  background-position: calc(100% - 20px) 20px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+other
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .goUp{
   width: calc(100dvw - 20%);
   margin-top: -24px;
