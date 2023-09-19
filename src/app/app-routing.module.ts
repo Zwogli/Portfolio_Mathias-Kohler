@@ -5,7 +5,7 @@ import { ScreenPortfolioComponent } from './screen-portfolio/screen-portfolio.co
 
 const routes: Routes = [
   { path: '', component: ScreenPortfolioComponent },
-  { path: 'imprint', component: ScreenImprintComponent } // /:id = url verfügt über eine Variable 
+  { path: 'imprint', component: ScreenImprintComponent } // /:id = url verfügt über eine Variable; url:'portfolio-mathias-kohler/imprint'
 ];
 
 @NgModule({
