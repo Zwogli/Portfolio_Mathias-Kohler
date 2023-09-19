@@ -29,12 +29,8 @@ export class SectionContactComponent {
     else {
       this.showFilledInputFields(nameField, mailField, messageField);
       this.createFormData(fd, nameField, mailField, messageField);
-
       /**send*/
-      await fetch(action, {
-        method: 'POST',
-        body: fd,
-      });
+      await fetch(action, {method: 'POST', body: fd});
 
       //>>>>>>> show send message
 
