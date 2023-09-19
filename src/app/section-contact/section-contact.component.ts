@@ -20,13 +20,19 @@ export class SectionContactComponent {
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
+    let lableNameField = document.getElementById('lable-input-name-missed');
+    let lableMailField = document.getElementById('lable-input-email-missed');
+    let lableMessageField = document.getElementById('lable-input-message-missed');
     let fd = new FormData();
 
     this.disableFields(nameField, mailField, messageField, sendButton);
+    this.removeClasses(nameField, lableNameField, mailField, lableMailField, messageField,lableMessageField);
+    
     if (this.checkedInputFields(nameField, mailField, messageField)) {
       this.showMissedInputFields(nameField, mailField, messageField);
     } 
     else {
+      this.removeClasses(nameField, lableNameField, mailField, lableMailField, messageField,lableMessageField)
       this.showFilledInputFields(nameField, mailField, messageField);
       this.createFormData(fd, nameField, mailField, messageField);
       /**send*/
@@ -66,16 +72,31 @@ export class SectionContactComponent {
       this.styleMissedInput(nameField, lableNameField);
     }else{
       nameField.classList.add("filledInput");
+      // lableNameField.style.display = 'none';
     } if(this.checkedSingleInputField(mailField)){
       this.styleMissedInput(mailField, lableMailField);
     }else{
       mailField.classList.add("filledInput");
+      // lableMailField.style.display = 'none';
     }
      if(this.checkedSingleInputField(messageField)){
       this.styleMissedInput(messageField, lableMessageField);
     } else {
       messageField.classList.add("filledInput-message");
+      // lableMessageField.style.display = 'none';
     }
+  }
+
+  removeClasses(nameField, lableNameField, mailField, lableMailField, messageField,lableMessageField){
+    nameField.classList.remove("missedInput");
+    nameField.classList.remove("filledInput");
+    lableNameField.style.display = 'none';
+    mailField.classList.remove("missedInput");
+    mailField.classList.remove("filledInput");
+    lableMailField.style.display = 'none';
+    messageField.classList.remove("missedInput-message");
+    messageField.classList.remove("filledInput-message");
+    lableMessageField.style.display = 'none';
   }
 
   /**check every input field value*/
