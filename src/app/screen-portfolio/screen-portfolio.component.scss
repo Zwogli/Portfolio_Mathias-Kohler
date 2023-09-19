@@ -43,6 +43,12 @@ app-section-portfolio{
   scroll-margin-top: var(--scroll-margin-mobile);
 }
 
+app-section-contact{
+  display: block;
+  margin-top: var(--margin-section-mobile);
+  scroll-margin-top: var(--scroll-margin-mobile);
+}
+
 app-footer{
   width: calc(100dvw - 20%);
   position: relative;
@@ -83,6 +89,11 @@ app-footer{
   }
 
   app-section-portfolio{
+    margin-top: var(--margin-section-desktop);
+    scroll-margin-top: var(--scroll-margin-desktop);
+  }
+
+  app-section-contact{
     margin-top: var(--margin-section-desktop);
     scroll-margin-top: var(--scroll-margin-desktop);
   }

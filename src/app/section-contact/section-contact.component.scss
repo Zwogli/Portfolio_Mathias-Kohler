@@ -2,11 +2,11 @@
 element
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 main{
-  margin-top: var(--margin-section-mobile);
-  scroll-margin-top: var(--scroll-margin-mobile);
   display: flex;
   flex-direction: column;
   gap: var(--gap-mobile);
+  position: relative;
+  z-index: 2;
 }
 header{
   display: flex;
@@ -50,7 +50,6 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  // border: 1px solid green;
   -webkit-text-fill-color: var(--color-white);
   -webkit-box-shadow: 0 0 0px 1000px var(--color-bg-inputs) inset;
   transition: background-color 5000s ease-in-out 0s;
@@ -108,7 +107,7 @@ background
   margin-top: -250px;
   position: absolute;
   right: 0;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
   img{
     height: 412px;
@@ -138,12 +137,6 @@ background
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   media width >= 850px, element
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
- 
-  main{
-    margin-top: var(--margin-section-desktop);
-    scroll-margin-top: var(--scroll-margin-desktop);
-  }
- 
   header{
     gap: 32px;
   }
