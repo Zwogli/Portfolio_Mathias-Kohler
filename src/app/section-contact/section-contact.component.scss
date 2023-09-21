@@ -64,8 +64,10 @@ form{
   flex-direction: column;
   align-items: center;
   z-index: 2;
+  position: relative;
 
-  div{
+  .lable-container{
+    position: relative;
     width: 100%;
     padding-bottom: 41px;
   }
@@ -80,6 +82,7 @@ form{
     font-family: poppins;
   }
   input, textarea{
+    // position: relative;
     width: calc(100% - 40px - 2px);
     border: 1px solid var(--color-bg-purple);
     border-radius: 10px;
@@ -92,7 +95,7 @@ form{
     height: 40px;
   }
   textarea{
-    padding: 20px;
+    padding: 8px 20px;
     max-width: 100%;
     resize: none;
   }
@@ -101,25 +104,44 @@ form{
     border:1px solid var(--color-bg-green);
   }
 }
-.missedInput{
+.inputBorderMissed{
   border: 1px solid var(--color-bg-red)!important;
-  background: url(../../assets/missed.png) no-repeat;
-  background-position: calc(100% - 20px);
 }
-.missedInput-message{
-  border: 1px solid var(--color-bg-red)!important;
-  background: url(../../assets/missed.png) no-repeat;
-  background-position: calc(100% - 20px) 20px;
-}
-.filledInput{
+.inputBorderFilled{
   border: 1px solid var(--color-bg-green)!important;
-  background: url(../../assets/filled.png) no-repeat;
-  background-position: calc(100% - 20px);
 }
-.filledInput-message{
-  border: 1px solid var(--color-bg-green)!important;
-  background: url(../../assets/filled.png) no-repeat;
-  background-position: calc(100% - 20px) 20px;
+.lable__filled{
+  // width: calc(100% - 10dvw)!important;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 8px; 
+  z-index: 1;
+  img{
+    position: absolute;
+    right: 20px;
+  };
+}
+.test{
+  width: 100%;
+  position: relative;
+  margin-right: unset;
+}
+.send-overlay{
+  width: calc(100% - 10dvw + 2px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  backdrop-filter: blur(2px);
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 other
@@ -137,6 +159,10 @@ other
 
 .center{
   justify-content: center;
+}
+
+.hide-show{
+  display: none;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 background
