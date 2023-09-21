@@ -73,13 +73,16 @@ export class SectionContactComponent {
     }else{
       nameField.classList.add("filledInput");
       // lableNameField.style.display = 'none';
-    } if(this.checkedSingleInputField(mailField)){
+    }
+    
+    if(this.checkedSingleInputField(mailField)){
       this.styleMissedInput(mailField, lableMailField);
     }else{
       mailField.classList.add("filledInput");
       // lableMailField.style.display = 'none';
     }
-     if(this.checkedSingleInputField(messageField)){
+     
+    if(this.checkedSingleInputField(messageField)){
       this.styleMissedInput(messageField, lableMessageField);
     } else {
       messageField.classList.add("filledInput-message");
@@ -87,13 +90,16 @@ export class SectionContactComponent {
     }
   }
 
+  /**reset field style*/
   removeClasses(nameField, lableNameField, mailField, lableMailField, messageField,lableMessageField){
     nameField.classList.remove("missedInput");
     nameField.classList.remove("filledInput");
     lableNameField.style.display = 'none';
+
     mailField.classList.remove("missedInput");
     mailField.classList.remove("filledInput");
     lableMailField.style.display = 'none';
+
     messageField.classList.remove("missedInput-message");
     messageField.classList.remove("filledInput-message");
     lableMessageField.style.display = 'none';
