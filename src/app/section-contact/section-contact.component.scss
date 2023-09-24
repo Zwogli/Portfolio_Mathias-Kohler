@@ -110,7 +110,7 @@ form{
 .inputBorderFilled{
   border: 1px solid var(--color-bg-green)!important;
 }
-.lable__filled{
+.lable__image{
   // width: calc(100% - 10dvw)!important;
   height: 25px;
   position: absolute;
@@ -123,12 +123,12 @@ form{
     right: 20px;
   };
 }
-.test{
+.section__form{
   width: 100%;
   position: relative;
   margin-right: unset;
 }
-.send-overlay{
+.form__overlay{
   width: calc(100% - 10dvw + 2px);
   position: absolute;
   left: 0;

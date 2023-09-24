@@ -8,119 +8,114 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class SectionContactComponent {
   @ViewChild('contactForm') contactForm: ElementRef;
   @ViewChild('nameField') nameField: ElementRef;
-  @ViewChild('mailField') mailField: ElementRef;
+  @ViewChild('emailField') emailField: ElementRef;
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
-
-  // lableNameTextMissed = document.getElementById('lable-input-name-missed');
-  // lableNameImageMissed = document.getElementById('lable-input-name-img-missed');
-  // lableMailTextMissed = document.getElementById('lable-input-email-missed');
-  // lableMailImageMissed = document.getElementById('lable-input-email-img-missed');
-  // lableMessageTextMissed = document.getElementById('lable-input-message-missed');
-  // lableMessageImageMissed = document.getElementById('lable-input-message-img-missed');
 
   async sendMail() {
     const phpUrl =
       'https://mathias-kohler.developerakademie.net/portfolio-mathias-kohler/send_mail-portfolio.php';
     const action = phpUrl;
     let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
+    let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
     let fd = new FormData();
 
-    this.disableFields(nameField, mailField, messageField, sendButton);
-    this.removeClasses();
+    this.disableFields(nameField, emailField, messageField, sendButton);
+    this.resetFormStyle();
     
-    if (this.checkedInputFields(nameField, mailField, messageField)) {
-      this.showMissedInputFields(nameField, mailField, messageField);
+    if (this.checkedInputFields(nameField, emailField, messageField)) {
+      this.showMissedInputFields(nameField, emailField, messageField);
     } 
     else {
-      this.removeClasses()
-      this.showFilledInputFields(nameField, mailField, messageField);
-      this.createFormData(fd, nameField, mailField, messageField);
+      this.resetFormStyle()
+      this.showFilledInputFields(nameField, emailField, messageField);
+      this.createFormData(fd, nameField, emailField, messageField);
       /**send*/
       await fetch(action, {method: 'POST', body: fd});
 
       this.toggleOverlay();
-      this.enableFields(nameField, mailField, messageField, sendButton);
+      this.enableFields(nameField, emailField, messageField, sendButton);
       this.cleareFields();
     }
   }
 
   /**disable input*/
-  disableFields(nameField, mailField, messageField, sendButton) {
+  disableFields(nameField, emailField, messageField, sendButton) {
     nameField.disable = true;
-    mailField.disable = true;
+    emailField.disable = true;
     messageField.disable = true;
     sendButton.disable = true;
   }
 
   /**check input-fields, if-statem*/
-  checkedInputFields(nameField, mailField, messageField) {
+  checkedInputFields(nameField, emailField, messageField) {
     return (
       nameField.value == '' || nameField.value == undefined || 
-      mailField.value == '' || mailField.value == undefined || 
+      emailField.value == '' || emailField.value == undefined || 
       messageField.value == '' || messageField.value == undefined
     );
   }
 
   /**style missed input-field*/
-  showMissedInputFields(nameField, mailField, messageField) {
-    let lableNameTextMissed = document.getElementById('lable-input-name-missed');
-    let lableNameImageMissed = document.getElementById('lable-input-name-img-missed');
-    let lableMailTextMissed = document.getElementById('lable-input-email-missed');
-    let lableMailImageMissed = document.getElementById('lable-input-email-img-missed');
-    let lableMessageTextMissed = document.getElementById('lable-input-message-missed');
-    let lableMessageImageMissed = document.getElementById('lable-input-message-img-missed');
+  showMissedInputFields(nameField, emailField, messageField) {
+    let nameLableImageFilled = document.getElementById('lable__name--img-filled');
+    let emailLableImageFilled = document.getElementById('lable__email--img-filled');
+    let messageLableImageFilled = document.getElementById('lable__message--img-filled');
+    let nameLableImageMissed = document.getElementById('lable__name--img-missed');
+    let emailLableImageMissed = document.getElementById('lable__email--img-missed');
+    let messageLableImageMissed = document.getElementById('lable__message--img-missed');
+    let nameLableTextMissed = document.getElementById('lable__text--name-missed');
+    let emailLableTextMissed = document.getElementById('lable__text--email-missed');
+    let messageLableTextMissed = document.getElementById('lable__text--message-missed');
 
     if (this.checkedSingleInputField(nameField)) {
-      this.styleMissedInput(nameField, lableNameTextMissed, lableNameImageMissed);
+      this.styleMissedInput(nameField, nameLableTextMissed, nameLableImageMissed);
     }else{
-      nameField.classList.add("inputBorderFilled");
-      document.getElementById('lable-input-name-img-filled').style.display = 'unset';
+      this.styleFilledInput(nameField, nameLableImageFilled);
     }
     
-    if(this.checkedSingleInputField(mailField)){
-      this.styleMissedInput(mailField, lableMailTextMissed, lableMailImageMissed);
+    if(this.checkedSingleInputField(emailField)){
+      this.styleMissedInput(emailField, emailLableTextMissed, emailLableImageMissed);
     }else{
-      mailField.classList.add("inputBorderFilled");
-      document.getElementById('lable-input-email-img-filled').style.display = 'unset';
+      this.styleFilledInput(emailField, emailLableImageFilled);
     }
      
     if(this.checkedSingleInputField(messageField)){
-      this.styleMissedInput(messageField, lableMessageTextMissed, lableMessageImageMissed);
+      this.styleMissedInput(messageField, messageLableTextMissed, messageLableImageMissed);
     } else {
-      messageField.classList.add("inputBorderFilled");
-      document.getElementById('lable-input-message-img-filled').style.display = 'unset';
+      this.styleFilledInput(messageField, messageLableImageFilled);
     }
   }
 
   /**reset field style*/
-  removeClasses(){
+  resetFormStyle(){
     let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
+    let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-    let lableNameTextMissed = document.getElementById('lable-input-name-missed');
-    let lableNameImageMissed = document.getElementById('lable-input-name-img-missed');
-    let lableMailTextMissed = document.getElementById('lable-input-email-missed');
-    let lableMailImageMissed = document.getElementById('lable-input-email-img-missed');
-    let lableMessageTextMissed = document.getElementById('lable-input-message-missed');
-    let lableMessageImageMissed = document.getElementById('lable-input-message-img-missed');
-    nameField.classList.remove("inputBorderMissed");
-    nameField.classList.remove("inputBorderFilled");
-    lableNameTextMissed.style.display = 'none';
-    lableNameImageMissed.style.display = 'none';
+    let nameLableImageFilled = document.getElementById('lable__name--img-filled');
+    let emailLableImageFilled = document.getElementById('lable__email--img-filled');
+    let messageLableImageFilled = document.getElementById('lable__message--img-filled');
+    let nameLableImageMissed = document.getElementById('lable__name--img-missed');
+    let emailLableImageMissed = document.getElementById('lable__email--img-missed');
+    let messageLableImageMissed = document.getElementById('lable__message--img-missed');
+    let nameLableTextMissed = document.getElementById('lable__text--name-missed');
+    let emailLableTextMissed = document.getElementById('lable__text--email-missed');
+    let messageLableTextMissed = document.getElementById('lable__text--message-missed');
+    
+    this.resetInputStyle(nameField, nameLableImageFilled, nameLableImageMissed, nameLableTextMissed);
+    this.resetInputStyle(emailField, emailLableImageFilled, emailLableImageMissed, emailLableTextMissed)
+    this.resetInputStyle(messageField, messageLableImageFilled, messageLableImageMissed, messageLableTextMissed)
+  }
 
-    mailField.classList.remove("inputBorderMissed");
-    mailField.classList.remove("inputBorderFilled");
-    lableMailTextMissed.style.display = 'none';
-    lableMailImageMissed.style.display = 'none';
+  resetInputStyle(inputField, lableImageFilled, lableImageMissed, lableTextMissed){
+    inputField.classList.remove("inputBorderFilled");
+    lableImageFilled.style.display = 'none';
 
-    messageField.classList.remove("inputBorderMissed");
-    messageField.classList.remove("inputBorderFilled");
-    lableMessageTextMissed.style.display = 'none';
-    lableMessageImageMissed.style.display = 'none';
+    inputField.classList.remove("inputBorderMissed");
+    lableImageMissed.style.display = 'none';
+    lableTextMissed.style.display = 'none';
   }
 
   /**check every input field value*/
@@ -129,31 +124,36 @@ export class SectionContactComponent {
   }
 
   /**set style by missed input value*/
-  styleMissedInput(input, labelText, labelImage){
-    labelText.style.display = 'flex'
-    labelImage.style.display = 'flex'
+  styleMissedInput(input, labelText, lableImage){
     input.classList.add("inputBorderMissed");
+    labelText.style.display = 'flex'
+    lableImage.style.display = 'flex'
+  }
+
+  styleFilledInput(input, lableImage){
+    input.classList.add("inputBorderFilled");
+    lableImage.style.display = 'flex'
   }
 
   /**style filled input-field*/
-  showFilledInputFields(nameField, mailField, messageField){
+  showFilledInputFields(nameField, emailField, messageField){
     nameField.classList.add("inputBorderFilled");
-    mailField.classList.add("inputBorderFilled");
+    emailField.classList.add("inputBorderFilled");
     messageField.classList.add("inputBorderFilled");
   }
 
   /**send informations*/
-  createFormData(fd, nameField, mailField, messageField) {
+  createFormData(fd, nameField, emailField, messageField) {
     fd.append('name', nameField.value);
-    fd.append('email', mailField.value);
+    fd.append('email', emailField.value);
     fd.append('message', messageField.value);
     return;
   }
 
   /**enable input*/
-  enableFields(nameField, mailField, messageField, sendButton) {
+  enableFields(nameField, emailField, messageField, sendButton) {
     nameField.disable = false;
-    mailField.disable = false;
+    emailField.disable = false;
     messageField.disable = false;
     sendButton.disable = false;
   }
@@ -172,7 +172,7 @@ export class SectionContactComponent {
 
   newForm(){
     this.toggleOverlay();
-    this.removeClasses()
+    this.resetFormStyle()
   }
 }
 

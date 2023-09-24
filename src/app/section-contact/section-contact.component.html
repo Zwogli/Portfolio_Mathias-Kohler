@@ -23,91 +23,104 @@
           Need a Frontend developer? <span class="contact-me">Contact me!</span>
         </p>
       </div>
-<div class="test">
-      <form #contactForm (submit)="sendMail()" ngNativeValidate > <!--autocomplete="off"-->
-        
-        <div class="lable-container">
-          <input
-          id="input-name"
-          name="name"
-          #nameField
-          type="text"
-          placeholder="Your name"
-          />
+      <div class="section__form">
+        <form #contactForm (submit)="sendMail()" ngNativeValidate>
+          <!--autocomplete="off"-->
 
-          <label #labelNameImageFilled for="input-name" id="lable-input-name-img-filled" class="lable__filled" style="display: none;">
-            <img src="../../assets/filled.png" alt="">
-          </label>
+          <div class="lable-container">
+            <input
+              id="input-name"
+              name="name"
+              #nameField
+              type="text"
+              placeholder="Your name"
+            />
 
-          <label #labelNameImageMissed for="input-name" id="lable-input-name-img-missed" style="display: none;" class="lable__filled">
-            <img src="../../assets/missed.png" alt="">
-          </label>
-          
-          <label #labelNameTextMissed id="lable-input-name-missed" style="display: none;" for="input-name">
-            Your name is required
-          </label>
-        </div>
+            <label
+              for="input-name"
+              class="lable__image"
+            >
+              <img id="lable__name--img-filled" style="display: none" src="../../assets/filled.png" alt="" />
+              <img id="lable__name--img-missed" style="display: none" src="../../assets/missed.png" alt="" />
+            </label>
 
-        <div class="lable-container">
-          <input
-          id="input-email"
-          name="email"
-          #mailField
-          type="email"
-          placeholder="Your email"
-          />
+            <label
+              #labelNameTextMissed
+              id="lable__text--name-missed"
+              style="display: none"
+              for="input-name"
+            >
+              Your name is required
+            </label>
+          </div>
 
-          <label for="input-email" id="lable-input-email-img-filled" class="lable__filled" style="display: none;">
-            <img src="../../assets/filled.png" alt="">
-          </label>
+          <div class="lable-container">
+            <input
+              id="input-email"
+              name="email"
+              #emailField
+              type="email"
+              placeholder="Your email"
+            />
 
-          <label for="input-email" id="lable-input-email-img-missed" style="display: none;" class="lable__filled">
-            <img src="../../assets/missed.png" alt="">
-          </label>
+            <label
+              for="input-email"
+              class="lable__image"
+            >
+              <img id="lable__email--img-filled" style="display: none" src="../../assets/filled.png" alt="" />
+              <img id="lable__email--img-missed" style="display: none" src="../../assets/missed.png" alt="" />
+            </label>
 
-          <label id="lable-input-email-missed" style="display: none;" for="input-email">
-            Your email is required
-          </label>
-        </div>
+            <label
+              id="lable__text--email-missed"
+              style="display: none"
+              for="input-email"
+            >
+              Your email is required
+            </label>
+          </div>
 
-        <div class="lable-container">
-          <textarea
-          id="input-message"
-          name="message"
-          #messageField
-          cols="30"
-          rows="15"
-          placeholder="Your message"
-          ></textarea>
+          <div class="lable-container">
+            <textarea
+              id="input-message"
+              name="message"
+              #messageField
+              cols="30"
+              rows="15"
+              placeholder="Your message"
+            ></textarea>
 
-          <label for="input-message" id="lable-input-message-img-filled" class="lable__filled" style="display: none;">
-            <img src="../../assets/filled.png" alt="">
-          </label>
+            <label
+              for="input-message"
+              class="lable__image"
+            >
+              <img id="lable__message--img-filled" style="display: none" src="../../assets/filled.png" alt="" />
+              <img id="lable__message--img-missed" style="display: none" src="../../assets/missed.png" alt="" />
+            </label>
 
-          <label for="input-message" id="lable-input-message-img-missed" style="display: none;" class="lable__filled">
-            <img src="../../assets/missed.png" alt="">
-          </label>
+            <label
+              id="lable__text--message-missed"
+              style="display: none"
+              for="input-message"
+            >
+              Your message is empty
+            </label>
+          </div>
 
-          <label id="lable-input-message-missed" style="display: none;" for="input-message">
-            Your message is empty
-          </label>
-        </div>
+          <div class="container__btn--hover center">
+            <button #sendButton class="btn btn--green">Send message</button>
+          </div>
 
-        <div class="container__btn--hover center">
-          <button #sendButton class="btn btn--green">Send message</button>
-        </div>
-
-        
-      </form>
-      <div id="form__overlay" class="send-overlay hide-show">
-        <h3>Message send</h3>
-        <div class="container__btn--hover center">
-          <button (click)="newForm()" class="btn btn--green">
-            New message
-          </button>
+        </form>
+        <div id="form__overlay" class="form__overlay hide-show">
+          <h3>Message send</h3>
+          <div class="container__btn--hover center">
+            <button (click)="newForm()" class="btn btn--green">
+              New message
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </article>
 
     <div class="goUp">
