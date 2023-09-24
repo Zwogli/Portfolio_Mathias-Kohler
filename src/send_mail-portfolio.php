@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'mathiaskohler@web.de'; # Bitte hier deine E-Mail angeben
+$recipient = 'mathiaskohler@mail.de'; # Bitte hier deine E-Mail angeben
 $redirect = 'https://mathias-kohler.developerakademie.net/portfolio-mathias-kohler/index.html';
 
 ########### CONFIG END ###########
