@@ -22,8 +22,8 @@ export class SectionContactComponent {
     let sendButton = this.sendButton.nativeElement;
     let fd = new FormData();
 
-    this.disableFields(nameField, emailField, messageField, sendButton);
     this.resetFormStyle();
+    this.disableFields(nameField, emailField, messageField, sendButton);
     
     if (this.checkedInputFields(nameField, emailField, messageField)) {
       this.showMissedInputFields(nameField, emailField, messageField);
@@ -58,7 +58,7 @@ export class SectionContactComponent {
     );
   }
 
-  /**style missed input-field*/
+  /**style input fields*/
   showMissedInputFields(nameField, emailField, messageField) {
     let nameLableImageFilled = document.getElementById('lable__name--img-filled');
     let emailLableImageFilled = document.getElementById('lable__email--img-filled');
@@ -75,13 +75,11 @@ export class SectionContactComponent {
     }else{
       this.styleFilledInput(nameField, nameLableImageFilled);
     }
-    
     if(this.checkedSingleInputField(emailField)){
       this.styleMissedInput(emailField, emailLableTextMissed, emailLableImageMissed);
     }else{
       this.styleFilledInput(emailField, emailLableImageFilled);
     }
-     
     if(this.checkedSingleInputField(messageField)){
       this.styleMissedInput(messageField, messageLableTextMissed, messageLableImageMissed);
     } else {
@@ -89,7 +87,7 @@ export class SectionContactComponent {
     }
   }
 
-  /**reset field style*/
+  /**reset all input styles*/
   resetFormStyle(){
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
@@ -109,6 +107,7 @@ export class SectionContactComponent {
     this.resetInputStyle(messageField, messageLableImageFilled, messageLableImageMissed, messageLableTextMissed)
   }
 
+  /**reset input style*/
   resetInputStyle(inputField, lableImageFilled, lableImageMissed, lableTextMissed){
     inputField.classList.remove("inputBorderFilled");
     lableImageFilled.style.display = 'none';
@@ -123,13 +122,14 @@ export class SectionContactComponent {
     return (inputField.value == '' || inputField.value == undefined);
   }
 
-  /**set style by missed input value*/
+  /**set missed style*/
   styleMissedInput(input, labelText, lableImage){
     input.classList.add("inputBorderMissed");
     labelText.style.display = 'flex'
     lableImage.style.display = 'flex'
   }
 
+  /**set filled style*/
   styleFilledInput(input, lableImage){
     input.classList.add("inputBorderFilled");
     lableImage.style.display = 'flex'
@@ -168,6 +168,7 @@ export class SectionContactComponent {
   toggleOverlay(){
     let overlay = document.getElementById('form__overlay');
     overlay.classList.toggle('hide-show');
+    overlay.classList.add('form__overlay--animation');
   }
 
   newForm(){
