@@ -102,6 +102,7 @@ form{
   input:focus, textarea:focus, input:hover, textarea:hover{
     outline: none !important;
     border:1px solid var(--color-bg-green);
+    cursor: text;
   }
 }
 .inputBorderMissed{
@@ -117,6 +118,7 @@ form{
   left: 0;
   top: 8px; 
   z-index: 1;
+  cursor: text;
   img{
     position: absolute;
     right: 20px;
