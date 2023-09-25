@@ -14,7 +14,7 @@ export class SectionContactComponent {
 
   async sendMail() {
     const phpUrl =
-      'https://mathias-kohler.developerakademie.net/portfolio-mathias-kohler/send_mail-portfolio.php';
+      'https://mathias-kohler.developerakademie.net/send_mail-portfolio.php';
     const action = phpUrl;
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
