@@ -20,6 +20,6 @@ export class FooterComponent {
 
   navigate(){
     let start = window.location.href = "imprint";
-    this.router.navigateByUrl('/portfolio-mathias-kohler/imprint'+ start); // Url = /portfolio-mathias-kohler/imprint + start
+    this.router.navigateByUrl('imprint' + start); // Url = /portfolio-mathias-kohler/imprint + start
   }
 }
