@@ -77,7 +77,7 @@ figure {
 }
 
 footer {
-  width: 100dvw;
+  width: 100%;
   position: absolute;
   bottom: 0px;
   z-index: 5;
@@ -215,7 +215,7 @@ footer {
       align-items: center;
       position: absolute;
       bottom: 32px;
-      right: 10dvw;
+      right: 10%;
       animation: test 2s infinite, rotate 1s infinite;
       .container__scroll--anchor {
         display: flex;

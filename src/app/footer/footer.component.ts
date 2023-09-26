@@ -21,5 +21,6 @@ export class FooterComponent {
   navigate(){
     // let start = window.location.href = "imprint";
     this.router.navigateByUrl('imprint'); // Url = /portfolio-mathias-kohler/imprint + start
+    window.scrollTo(0, 0);
   }
 }
