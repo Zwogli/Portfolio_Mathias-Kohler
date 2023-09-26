@@ -226,3 +226,18 @@ other scrollbar
     top: 29px;
   }
 }
+
+@media(width >= 1920px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-inputs);
+  }
+  .max-1920{
+    position: relative;
+    width: 1920px;
+    overflow-x: hidden;
+    background-color: var(--color-bg-darkBlue);
+  }
+}
