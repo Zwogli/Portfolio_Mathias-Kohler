@@ -37,6 +37,9 @@ main{
 }
 
 @media(width >= 850px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 850px
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   main{
     flex-direction: row;
     img{
@@ -50,6 +53,21 @@ main{
       p{
         text-align: end;
       }
+    }
+  }
+}
+
+@media(width >= 1920px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 1920px
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  main{
+    justify-content: center;
+    img{
+      width: var(--width__project--img);
+    }
+    article{
+      width: var(--width__project--txt);
     }
   }
 }

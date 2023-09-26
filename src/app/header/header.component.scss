@@ -14,7 +14,6 @@ header {
   width: calc(100% - var(--padding-mobile));
   height: 100%;
   padding: var(--padding-mobile);
-  background-color: var(--color-bg-darkBlue);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,5 +131,14 @@ aside {
     a {
       font-size: 32px;
     }
+  }
+}
+
+@media(width >= 1920px){
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 1920px, element
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  header{
+    width: calc(1920px - var(--padding-single));
   }
 }

@@ -5,6 +5,13 @@ element
   display: none;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-mobile);
+}
+
 section {
   border-top: none;
   display: flex;
@@ -29,10 +36,26 @@ section {
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   media width >= 850px, global
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  main{
+    width: calc(100% - var( --padding-single));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .show-mobile {
     display: none;
   }
   .show-desktop {
     display: flex;
+  }
+}
+
+@media (width >=1920px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  media width >= 1920px, global
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  main{
+    width: calc(1920px - var( --padding-single));
   }
 }
