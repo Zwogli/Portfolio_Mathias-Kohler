@@ -235,9 +235,11 @@ background
     width: 45%;
   }
   .form__overlay{
-    width: calc(100% - 10dvw + 4px);
+    // width: calc(100% - 10dvw + 4px);
     padding: unset;
-    left: -1px;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   media width >= 850px, background
