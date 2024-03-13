@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScreenPortfolioComponent } from './screen-portfolio/screen-portfolio.component';
 import { ScreenImprintComponent } from './screen-imprint/screen-imprint.component';
 import { ProjectPokedexComponent } from './project-pokedex/project-pokedex.component';
+import { ProjectDabubbleComponent } from './project-dabubble/project-dabubble.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProjectPokedexComponent } from './project-pokedex/project-pokedex.compo
     ScreenPortfolioComponent,
     ScreenImprintComponent,
     ProjectPokedexComponent,
+    ProjectDabubbleComponent,
   ],
   imports: [
     FormsModule,
