@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { SectionLandingComponent } from './section-landing/section-landing.component';
-import { SectionAboutMeComponent } from './section-about-me/section-about-me.component';
-import { SectionSkillsComponent } from './section-skills/section-skills.component';
-import { SectionContactComponent } from './section-contact/section-contact.component';
+import { SectionLandingComponent } from './sections/section-landing/section-landing.component';
+import { SectionAboutMeComponent } from './sections/section-about-me/section-about-me.component';
+import { SectionSkillsComponent } from './sections/section-skills/section-skills.component';
+import { SectionContactComponent } from './sections/section-contact/section-contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { SectionPortfolioComponent } from './section-portfolio/section-portfolio.component';
-import { ProjectElPolloLocoComponent } from './project-el-pollo-loco/project-el-pollo-loco.component';
-import { ProjectJoinComponent } from './project-join/project-join.component';
+import { SectionPortfolioComponent } from './sections/section-portfolio/section-portfolio.component';
+import { ProjectElPolloLocoComponent } from './projects/project-el-pollo-loco/project-el-pollo-loco.component';
+import { ProjectJoinComponent } from './projects/project-join/project-join.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScreenPortfolioComponent } from './screen-portfolio/screen-portfolio.component';
 import { ScreenImprintComponent } from './screen-imprint/screen-imprint.component';
-import { ProjectPokedexComponent } from './project-pokedex/project-pokedex.component';
-import { ProjectDabubbleComponent } from './project-dabubble/project-dabubble.component';
+import { ProjectPokedexComponent } from './projects/project-pokedex/project-pokedex.component';
+import { ProjectDabubbleComponent } from './projects/project-dabubble/project-dabubble.component';
 
 @NgModule({
   declarations: [
