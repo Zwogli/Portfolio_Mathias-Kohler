@@ -17,6 +17,7 @@ import { ScreenPortfolioComponent } from './screen-portfolio/screen-portfolio.co
 import { ScreenImprintComponent } from './screen-imprint/screen-imprint.component';
 import { ProjectPokedexComponent } from './projects/project-pokedex/project-pokedex.component';
 import { ProjectDabubbleComponent } from './projects/project-dabubble/project-dabubble.component';
+import { ProjectVideoflixComponent } from './projects/project-videoflix/project-videoflix.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProjectDabubbleComponent } from './projects/project-dabubble/project-da
     ScreenImprintComponent,
     ProjectPokedexComponent,
     ProjectDabubbleComponent,
+    ProjectVideoflixComponent,
   ],
   imports: [
     FormsModule,
