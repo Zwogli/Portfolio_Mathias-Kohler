@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'mathiaskohler@mail.de'; # Bitte hier deine E-Mail angeben
+$recipient = 'portfolio@mathias-kohler.de'; # Bitte hier deine E-Mail angeben
 $redirect = 'https://mathias-kohler.de/send_mail-portfolio.php';  //portfolio-mathias-kohler/
 
 ########### CONFIG END ###########
