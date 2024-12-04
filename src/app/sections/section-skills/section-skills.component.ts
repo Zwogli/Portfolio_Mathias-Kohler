@@ -12,6 +12,10 @@ export class SectionSkillsComponent {
       img: 'assets/icons/Angular.png',
     },
     {
+      name: 'Angular',
+      img: `assets/icons/svg/Angular.svg`,
+    },
+    {
       name: 'Rest-Api',
       img: 'assets/icons/Api.png',
     },
@@ -53,8 +57,7 @@ export class SectionSkillsComponent {
     },
   ];
 
-  location(path){
-      window.location.href = path;
+  location(path) {
+    window.location.href = path;
   }
 }
-
