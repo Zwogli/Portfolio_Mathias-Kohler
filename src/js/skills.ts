@@ -130,7 +130,8 @@ export const Skills: Skill[] = [
       img: `assets/icons/svg/Ubuntu.svg`,
     },
     {
-      name: 'Visual Studio Code (VS Code)',
+      // name: 'Visual Studio Code (VS Code)',
+      name: 'VS Code',
       img: `assets/icons/svg/Visual Studio Code (VS Code).svg`,
     },
     // {
