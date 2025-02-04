@@ -81,10 +81,10 @@ export const Skills: Skill[] = [
   //   name: 'NGINX',
   //   img: `assets/icons/svg/NGINX.svg`,
   // },
-  // {
-  //   name: 'Node.js',
-  //   img: `assets/icons/svg/Node.js.svg`,
-  // },
+  {
+    name: 'Node.js',
+    img: `assets/icons/svg/Node.js.svg`,
+  },
   // {
   //   name: 'NPM',
   //   img: `assets/icons/svg/NPM.svg`,
@@ -113,10 +113,10 @@ export const Skills: Skill[] = [
     name: 'Python',
     img: `assets/icons/svg/Python.svg`,
   },
-  // {
-  //   name: 'Redis',
-  //   img: `assets/icons/svg/Redis.svg`,
-  // },
+  {
+    name: 'Redis',
+    img: `assets/icons/svg/Redis.svg`,
+  },
   {
     name: 'Sass',
     img: `assets/icons/svg/Sass.svg`,
@@ -133,11 +133,11 @@ export const Skills: Skill[] = [
     name: 'Ubuntu',
     img: `assets/icons/svg/Ubuntu.svg`,
   },
-  {
+  // {
     // name: 'Visual Studio Code (VS Code)',
-    name: 'VS Code',
-    img: `assets/icons/svg/Visual Studio Code (VS Code).svg`,
-  },
+  //   name: 'VS Code',
+  //   img: `assets/icons/svg/Visual Studio Code (VS Code).svg`,
+  // },
   // {
   //   name: 'WordPress',
   //   img: `assets/icons/svg/WordPress.svg`,
@@ -151,10 +151,10 @@ export const Skills: Skill[] = [
     name: 'Rest-Api',
     img: 'assets/icons/Api.png',
   },
-  {
-    name: 'Material design',
-    img: 'assets/icons/materialDesign.png',
-  },
+  // {
+  //   name: 'Material design',
+  //   img: 'assets/icons/materialDesign.png',
+  // },
   {
     name: 'Scrum',
     img: 'assets/icons/Scrum.png',
