@@ -79,6 +79,7 @@ element
       border-top: var(--border-heigth) solid var(--color-bg-green);
       z-index: 1;
     }
+
     &--img {
       width: calc(100% - 8px);
       max-width: 400px;
@@ -88,13 +89,24 @@ element
       border: var(--border-heigth) solid var(--color-bg-green);
       overflow: hidden;
       background-color: var(--color-bg-inputs);
-      img {
-        margin-top: 0px;
-        margin-left: -109px;
-        width: 140%;
+      img{
         object-fit: cover;
         object-position: 50% 50%;
         transform: scaleX(-1);
+      }
+      &--v1 {
+        margin-left: -7rem;
+        width: 140%;
+      }
+      &--v2 {
+        margin-top: 1rem;
+        margin-left: -47rem;
+        width: 330%;
+      }
+      &--v3 {
+        margin-top: 1rem;
+        margin-left: -1rem;
+        width: 150%;
       }
     }
   }
