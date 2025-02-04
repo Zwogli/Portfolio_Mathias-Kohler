@@ -7,6 +7,7 @@ main{
   img{
     width: calc(100dvw - 20%);
     object-fit: cover;
+    filter: drop-shadow(3px 3px 3px black);
   }
   article{
     display: flex;
