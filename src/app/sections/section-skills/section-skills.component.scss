@@ -50,6 +50,7 @@ main {
 
     &:hover {
       color: var(--color-bg-green);
+      background-color: var(--color-bg-darkBlue);
       .skill__container--hover {
         img {
           animation: jump 400ms;
@@ -99,7 +100,7 @@ main {
 
     .headline {
       gap: 32px;
-      
+
       span {
         width: calc(10dvw);
       }
