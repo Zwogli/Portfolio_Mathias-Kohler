@@ -29,6 +29,10 @@ element
   display: flex;
   gap: var(--gap-mobile);
 
+  h3 {
+    margin-top: unset;
+  }
+
   p {
     z-index: 5;
   }
@@ -89,7 +93,7 @@ element
       border: var(--border-heigth) solid var(--color-bg-green);
       overflow: hidden;
       background-color: var(--color-bg-inputs);
-      img{
+      img {
         object-fit: cover;
         object-position: 50% 50%;
         transform: scaleX(-1);
